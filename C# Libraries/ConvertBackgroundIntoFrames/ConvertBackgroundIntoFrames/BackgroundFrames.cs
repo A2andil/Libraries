@@ -29,7 +29,13 @@ namespace ConvertBackgroundIntoFrames
             ofd.Filter = "jpg files (*.jpg)|*.jpg|png files (*.png)|*.png"
                 + "|All files (*.*)|*.*";
             if (ofd.ShowDialog() == DialogResult.OK)
+            {
                 txtPath.Text = ofd.FileName;
+                Image bg = Image.FromFile(ofd.FileName);
+                txtWidth.Text = bg.Width.ToString(); 
+                txtHeight.Text = bg.Height.ToString(); 
+            }
+
             else txtPath.Text = "";
         }
 
@@ -46,11 +52,12 @@ namespace ConvertBackgroundIntoFrames
             try
             {
                 Bitmap bg = (Bitmap)Image.FromFile(txtPath.Text);
+                bg = ResizeBackground(bg);
                 int idx = 0;
                 while (idx < bg.Width)
                 {
                     bg.Save(Path.Combine(txtFolder.Text
-                        ,txtPrefix.Text + idx.ToString() + ".png"));
+                        , txtPrefix.Text + idx.ToString() + ".png"));
 
                     Bitmap bmp = new Bitmap(bg.Width, bg.Height);
                     for (int y = 0; y < bg.Height; y++)
@@ -69,6 +76,16 @@ namespace ConvertBackgroundIntoFrames
             {
                 MessageBox.Show("Fatel Error");
             }
+        }
+
+        private Bitmap ResizeBackground(Bitmap bmp)
+        {
+            int w = int.Parse(txtWidth.Text), h = int.Parse(txtHeight.Text);
+            Bitmap ans = new Bitmap(w, h);
+            Graphics graphic = Graphics.FromImage(ans);
+            graphic.DrawImage(bmp, 0, 0, w + (w / bmp.Width), h);
+            graphic.Dispose();
+            return ans;
         }
     }
 }

@@ -38,6 +38,10 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtPrefix = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtWidth = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCls
@@ -58,6 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(2, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 23);
@@ -80,7 +85,7 @@
             this.btnSlctPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSlctPath.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSlctPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnSlctPath.Location = new System.Drawing.Point(444, 80);
+            this.btnSlctPath.Location = new System.Drawing.Point(444, 79);
             this.btnSlctPath.Name = "btnSlctPath";
             this.btnSlctPath.Size = new System.Drawing.Size(53, 30);
             this.btnSlctPath.TabIndex = 3;
@@ -96,7 +101,7 @@
             this.btnSlctFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSlctFolder.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSlctFolder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnSlctFolder.Location = new System.Drawing.Point(444, 157);
+            this.btnSlctFolder.Location = new System.Drawing.Point(444, 156);
             this.btnSlctFolder.Name = "btnSlctFolder";
             this.btnSlctFolder.Size = new System.Drawing.Size(53, 30);
             this.btnSlctFolder.TabIndex = 6;
@@ -115,6 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label2.Location = new System.Drawing.Point(2, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 23);
@@ -124,7 +130,8 @@
             // btnSave
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(244, 235);
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSave.Location = new System.Drawing.Point(244, 300);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(244, 34);
             this.btnSave.TabIndex = 7;
@@ -134,7 +141,7 @@
             // 
             // txtPrefix
             // 
-            this.txtPrefix.Location = new System.Drawing.Point(6, 237);
+            this.txtPrefix.Location = new System.Drawing.Point(6, 302);
             this.txtPrefix.Name = "txtPrefix";
             this.txtPrefix.Size = new System.Drawing.Size(232, 31);
             this.txtPrefix.TabIndex = 9;
@@ -142,18 +149,57 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 202);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label3.Location = new System.Drawing.Point(5, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 23);
             this.label3.TabIndex = 8;
             this.label3.Text = "Prefix:";
+            // 
+            // txtWidth
+            // 
+            this.txtWidth.Location = new System.Drawing.Point(12, 228);
+            this.txtWidth.Name = "txtWidth";
+            this.txtWidth.Size = new System.Drawing.Size(234, 31);
+            this.txtWidth.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label4.Location = new System.Drawing.Point(3, 197);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 23);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Width:";
+            // 
+            // txtHeight
+            // 
+            this.txtHeight.Location = new System.Drawing.Point(255, 228);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(233, 31);
+            this.txtHeight.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label5.Location = new System.Drawing.Point(251, 197);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 23);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Height:";
             // 
             // BackgroundFrames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(500, 280);
+            this.ClientSize = new System.Drawing.Size(500, 341);
+            this.Controls.Add(this.txtHeight);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtWidth);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPrefix);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
@@ -186,6 +232,10 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtPrefix;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtWidth;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.Label label5;
     }
 }
 
