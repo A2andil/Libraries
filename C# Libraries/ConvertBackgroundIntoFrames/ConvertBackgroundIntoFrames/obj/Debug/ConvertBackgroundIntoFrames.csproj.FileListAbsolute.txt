@@ -1,0 +1,10 @@
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\bin\Debug\ConvertBackgroundIntoFrames.exe.config
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\bin\Debug\ConvertBackgroundIntoFrames.exe
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\bin\Debug\ConvertBackgroundIntoFrames.pdb
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.csprojAssemblyReference.cache
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.BackgroundFrames.resources
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.Properties.Resources.resources
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.csproj.GenerateResource.cache
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.csproj.CoreCompileInputs.cache
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.exe
+D:\Github\Libraries\C# Libraries\ConvertBackgroundIntoFrames\ConvertBackgroundIntoFrames\obj\Debug\ConvertBackgroundIntoFrames.pdb
