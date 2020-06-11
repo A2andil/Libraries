@@ -36,6 +36,8 @@
             this.txtFolder = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtPrefix = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCls
@@ -122,20 +124,38 @@
             // btnSave
             // 
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(52, 209);
+            this.btnSave.Location = new System.Drawing.Point(244, 235);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(378, 34);
+            this.btnSave.Size = new System.Drawing.Size(244, 34);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Process and Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtPrefix
+            // 
+            this.txtPrefix.Location = new System.Drawing.Point(6, 237);
+            this.txtPrefix.Name = "txtPrefix";
+            this.txtPrefix.Size = new System.Drawing.Size(232, 31);
+            this.txtPrefix.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Prefix:";
             // 
             // BackgroundFrames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(500, 257);
+            this.ClientSize = new System.Drawing.Size(500, 280);
+            this.Controls.Add(this.txtPrefix);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnSlctFolder);
             this.Controls.Add(this.txtFolder);
@@ -164,6 +184,8 @@
         private System.Windows.Forms.TextBox txtFolder;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txtPrefix;
+        private System.Windows.Forms.Label label3;
     }
 }
 

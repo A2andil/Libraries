@@ -50,7 +50,7 @@ namespace ConvertBackgroundIntoFrames
                 while (idx < bg.Width)
                 {
                     bg.Save(Path.Combine(txtFolder.Text
-                        ,"day" + idx.ToString() + ".png"));
+                        ,txtPrefix.Text + idx.ToString() + ".png"));
 
                     Bitmap bmp = new Bitmap(bg.Width, bg.Height);
                     for (int y = 0; y < bg.Height; y++)
