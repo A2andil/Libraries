@@ -1,0 +1,9 @@
+<div class="contsiner-fluid" style="width: 50%; margin:10px auto;">
+    <input #did type="text" class="form-control" [(ngModel)] = "task.id" />
+    <input #did type="text" class="des form-control" placeholder="Enter Title" 
+        [(ngModel)] = "task.title" />
+    <textarea #dides class="form-control des" placeholder="Enter Description"
+    [(ngModel)] = "task.description" ></textarea>
+    <a (click) = "insert()" class="des dl btn btn-primary">Save</a>
+    <a routerLink="" class="des dl mbtn btn btn-dark">Cancel</a>
+</div>

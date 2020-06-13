@@ -1,0 +1,21 @@
+<div class="container-fluid home">
+    <ul class="list-group">
+        <li class="list-group-item item">
+            <a routerLink="task" class="btn btn-primary">New Task</a>
+        </li>
+        <li class="list-group-item item" *ngFor="let task of db.tasks; index as i">
+            <div class="row">
+                <div class="col">
+                    {{task.title}}
+                </div>
+                <div class="col">
+                    {{task.description}}
+                </div>
+                <div class="col">
+                    <a [routerLink]="['task', task.id]" class="btn btn-primary">Edit</a>
+                    <a (click) = 'delete(i)' class="btn btn-danger dl">delete</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

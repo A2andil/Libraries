@@ -1,0 +1,6 @@
+<div class="contsiner-fluid" style="width: 50%; margin:10px auto;">
+    <input #did type="text" class="form-control" [value] = "id" readonly />
+    <textarea #dides class="form-control des" [value] = "description"></textarea>
+    <a (click) = 'save(did.value, dides.value)' class="des dl btn btn-primary">Save</a>
+    <a routerLink="" class="des mbtn btn btn-dark">Cancel</a>
+</div>
