@@ -1,0 +1,44 @@
+﻿@model FAQProject.ViewModels.ListFAQVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-left">
+    <ul class="list-group">
+        @foreach(var item in Model.Questions)
+        {
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col">
+                        <details>
+                            <summary class="disable-select">
+                                @item.Question
+                                <div class="edit">
+                                    <a asp-controller="FAQS" asp-action="Modify"
+                                       asp-route-id="@item.Id">
+                                        <i class="fa fa-pencil-square-o fa-lg red"></i>
+                                    </a>
+                                    <a asp-controller="FAQS" asp-action="Eye"
+                                       asp-route-id="@item.Id" hidden="@(item.IsHidden)">
+                                        <i class="fa fa-eye fa-lg"></i>
+                                    </a>
+                                    <a asp-controller="FAQS" asp-action="Eye"
+                                       asp-route-id="@item.Id" hidden="@(!item.IsHidden)">
+                                        <i class="fa fa-eye-slash fa-lg"></i>
+                                    </a>
+                                </div>
+                            </summary>
+                            <div class="faq-answer">
+                                @foreach (var x in item.Answer.Split("<br>"))
+                                {
+                                    @x <br />
+                                }
+                            </div>
+
+                        </details>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

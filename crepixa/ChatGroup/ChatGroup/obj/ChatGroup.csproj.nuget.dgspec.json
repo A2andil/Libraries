@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OS\\source\\repos\\ChatGroup\\ChatGroup\\ChatGroup.csproj": {}
+    "D:\\Github\\Libraries\\crepixa\\ChatGroup\\ChatGroup\\ChatGroup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OS\\source\\repos\\ChatGroup\\ChatGroup\\ChatGroup.csproj": {
+    "D:\\Github\\Libraries\\crepixa\\ChatGroup\\ChatGroup\\ChatGroup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OS\\source\\repos\\ChatGroup\\ChatGroup\\ChatGroup.csproj",
+        "projectUniqueName": "D:\\Github\\Libraries\\crepixa\\ChatGroup\\ChatGroup\\ChatGroup.csproj",
         "projectName": "ChatGroup",
-        "projectPath": "C:\\Users\\OS\\source\\repos\\ChatGroup\\ChatGroup\\ChatGroup.csproj",
+        "projectPath": "D:\\Github\\Libraries\\crepixa\\ChatGroup\\ChatGroup\\ChatGroup.csproj",
         "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OS\\source\\repos\\ChatGroup\\ChatGroup\\obj\\",
+        "outputPath": "D:\\Github\\Libraries\\crepixa\\ChatGroup\\ChatGroup\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OS\\AppData\\Roaming\\NuGet\\NuGet.Config",

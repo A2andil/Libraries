@@ -1,0 +1,30 @@
+﻿@model FAQProject.ViewModels.ListFAQVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-left">
+    <ul class="list-group">
+        @for (int i = 0; i < Model.Questions.Count; i++)
+        {
+            <li class="list-group-item">
+                <div class="container">
+                    <details>
+                        <summary class="disable-select">
+                            @Model.Questions[i].Question
+                        </summary>
+                        <div class="faq-answer">
+                           @foreach (var x in Model.Questions[i].Answer.Split("<br>"))
+                            {
+                               @x <br/>
+                            }
+                       </div>
+
+                   </details>
+
+               </div>
+
+           </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,22 @@
+
+======================= EF Packages ============================
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Update-Package Microsoft.EntityFrameworkCore.Tools
+Get-Help about_EntityFrameworkCoreGet-Help about_EntityFrameworkCore
+========================== END =================================
+
+
+======================== DbContext =============================
+ services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+======================== End DbContext =========================
+
+
+====================== ConnectionString ========================
+ "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=FAQ;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+====================== End ConnectionString ====================
+
+

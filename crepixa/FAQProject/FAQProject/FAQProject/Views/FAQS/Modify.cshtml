@@ -1,0 +1,26 @@
+﻿@model FAQProject.Models.FAQ
+@{
+    ViewData["Title"] = "Create";
+}
+<h3>Edit Question</h3>
+@using (Html.BeginForm())
+{
+    <div class="container-fluid">
+        @Html.HiddenFor(x => x.Id);
+        @Html.HiddenFor(x => x.IsHidden)
+        <div class="form-group">
+            <label for="ques">Enter Question</label>
+            @Html.TextAreaFor(m => m.Question,
+                new { @class = "form-control"})
+        </div>
+        <div class="form-group">
+            <label for="ques">Enter Answer</label>
+            @Html.TextAreaFor(m => m.Answer,
+                new { @class = "form-control"})
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Save" />
+            <a href="/" class="btn btn-info">Cancel</a>
+        </div>
+    </div>
+}
