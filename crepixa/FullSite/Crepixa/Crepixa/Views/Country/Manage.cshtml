@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Country>
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<a asp-controller="Country" asp-action="New" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i> New
+</a>
+<table class="table">
+
+    <tr class="tbl">
+        <th>
+            Arabic
+        </th>
+        <th>
+            English
+        </th>
+        <th>
+            Image
+        </th>
+        <th>
+            Operations
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="tbl">
+            <td>
+                @item.NameAr
+            </td>
+            <td>
+                @item.NameEn
+            </td>
+            <td>
+                <img src="~/@item.ImageUrl" style="width: 32px; height: 32px" />
+            </td>
+            <td>
+                <a asp-controller="Country" asp-action="Delete"
+                   asp-route-id="@item.Id" class="red">
+                    <i class="fa fa-trash fa-lg"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>

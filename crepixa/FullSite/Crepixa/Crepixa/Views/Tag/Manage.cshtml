@@ -1,0 +1,29 @@
+﻿@model Crepixa.ViewModels.TagsItemsVM
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<a asp-controller="Tag" asp-action="New" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i> New
+</a>
+<div class="text-left">
+    <ul class="list-group">
+        @foreach (var item in Model.TagsList)
+        {
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-sm-11">
+                        @item.Name
+                    </div>
+                    <div class="col-sm-1">
+                        <a asp-controller="Tag" asp-action="Delete"
+                           asp-route-id="@item.Id" class="red">
+                            <i class="fa fa-trash fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

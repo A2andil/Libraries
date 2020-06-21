@@ -1,0 +1,11 @@
+================= Cores ===============
+services.AddCors(options =>
+            {
+                options.AddPolicy("EnableCORS", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials().Build();
+                });
+            });
+
+app.enableCores("EnableCORS");
+=============== EndCore ===============

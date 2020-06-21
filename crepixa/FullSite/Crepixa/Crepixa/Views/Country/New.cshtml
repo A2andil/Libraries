@@ -1,0 +1,26 @@
+﻿@model Crepixa.ViewModels.CountryVM
+@{
+    ViewData["Title"] = "New Tag";
+}
+<h3>
+    New Tag
+</h3>
+
+@using (Html.BeginForm("New", "Country", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container">
+        <div class="form-group">
+            <label for="ARN">Name In Arabic</label>
+            @Html.TextBoxFor(x => x.NameAr, new { @class = "form-control", @name = "ARN" })
+        </div>
+        <div class="form-group">
+            <label for="ARE">Name In English</label>
+            @Html.TextBoxFor(x => x.NameEn, new { @class = "form-control", @name = "ARE" })
+        </div>
+        <div class="form-group">
+            <label for="ARE">Select Image</label>
+            @Html.EditorFor(x => x.FileUpload)
+        </div>
+        <input type="submit" class="form-control btn btn-primary" value="New Country" />
+    </div>
+}
