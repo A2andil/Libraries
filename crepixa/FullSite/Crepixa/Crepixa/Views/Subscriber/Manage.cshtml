@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Subscriber>
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<a asp-controller="Subscriber" asp-action="New" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i> New
+</a>
+<a asp-controller="Subscriber" asp-action="Send" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-envelope fa-lg"></i> Send Emails
+</a>
+<table class="table">
+
+    <tr class="tbl">
+        <th>
+            Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Operations
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="tbl">
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                <a asp-controller="Subscriber" asp-action="Delete"
+                   asp-route-id="@item.Id" class="red">
+                    <i class="fa fa-trash fa-lg"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>

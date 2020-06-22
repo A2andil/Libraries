@@ -107,3 +107,10 @@ li.borderless {
     text-align: center
 }
 /*========== End Countries ===============*/
+
+/*========== Subscribers ==================*/
+.ptr {
+    cursor: pointer;
+}
+
+/*========== End Subscribers =============*/

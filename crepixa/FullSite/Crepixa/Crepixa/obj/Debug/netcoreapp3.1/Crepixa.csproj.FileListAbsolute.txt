@@ -146,3 +146,6 @@ D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Raz
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Manage.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Country\New.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Country\Manage.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Subscriber\New.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Subscriber\Manage.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Subscriber\Send.cshtml.g.cs

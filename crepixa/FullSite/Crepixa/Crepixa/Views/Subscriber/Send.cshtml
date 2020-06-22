@@ -1,0 +1,119 @@
+﻿@model List<Crepixa.ViewModels.SubscriberItem>
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<button type="button" id="SendMessage" class="btn btn-success shadow-none"
+        style="margin-bottom: 5px">
+    <i class="fa fa-envelope fa-lg"></i> Send Emails
+</button>
+
+<a asp-controller="Subscriber" asp-action="Manage"
+   class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-tasks fa-lg"></i>Manage
+</a>
+<form asp-area="Security" asp-controller="Subscriber" asp-action="Send" method="post">
+    <textarea class="form-control" id="Message"></textarea>
+    <table class="table" id="list_all">
+        <tr class="tbl">
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                <input type="checkbox" id="select_all" class="ptr" />
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr class="tbl">
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @Html.CheckBoxFor(x => item.Ischecked, new { @class = "ptr" })
+                </td>
+            </tr>
+        }
+    </table>
+</form>
+
+
+<!--------------------- JavaScript ------------------------>
+
+@section Scripts {
+    <script>
+        var table = document.getElementById("list_all");
+        document.getElementById('select_all').addEventListener('change', function () {
+            let ans = this.checked;
+            for (var i = 1; i < table.rows.length; i++) {
+                table.rows[i].cells[2].children[0].checked = ans;
+            }
+        });
+        //select all lists checked parent
+        var table = document.getElementById("list_all");
+        for (var i = 1; i < table.rows.length; i++) {
+            table.rows[i].cells[2].children[0].addEventListener('change', function () {
+                var parent = document.getElementById('select_all');
+                var ans = true;
+                for (var i = 1; i < table.rows.length; i++) {
+                    ans &= table.rows[i].cells[2].children[0].checked;
+                }
+                parent.checked = ans;
+            });
+        }
+
+        $("#SendMessage").click(function () {
+
+            var listItems = [];
+            var rows = document.getElementById('list_all').rows;
+            console.log(rows.length);
+            for (let i = 1; i < rows.length; i++) {
+                if (rows[i].cells[2].children[0].checked) {
+                    var obj = {};
+                    obj["Name"] = rows[i].cells[0].innerText;
+                    obj["Email"] = rows[i].cells[1].innerText;
+                    obj["Ischecked"] = true;
+                    listItems.push(obj);
+                }
+            }
+
+            if (listItems.length < 1) {
+                alert('You should select at least one item');
+                return false;
+            }
+
+            var SenderObj = {
+                "Message": $('#Message').val(),
+                "subscribers": listItems
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Subscriber/Send",
+                data: {
+                    'model': SenderObj
+                },
+                dataType: 'json',
+                success: function (response) {
+                    if (response == 'success') {
+                        alert('successive insertion');
+                        window.location.href = "/Subscriber/Manage";
+                    }
+                    else {
+                        alert(response.IsSuccess);
+                    }
+                },
+                error: function (req, status, error) {
+                }
+            });
+
+        });
+    </script>
+}
