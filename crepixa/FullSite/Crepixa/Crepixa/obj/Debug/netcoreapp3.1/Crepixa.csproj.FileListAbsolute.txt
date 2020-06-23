@@ -139,8 +139,6 @@ D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\run
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Crepixa.csproj.CoreCompileInputs.cache
-D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Crepixa.MvcApplicationPartsAssemblyInfo.cache
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Tag\New.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Manage.cshtml.g.cs
@@ -149,3 +147,9 @@ D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Raz
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Subscriber\New.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Subscriber\Manage.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Subscriber\Send.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\NETCore.MailKit.dll
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Crepixa.csproj.CoreCompileInputs.cache
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Crepixa.MvcApplicationPartsAssemblyInfo.cache

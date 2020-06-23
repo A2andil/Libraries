@@ -1,0 +1,7 @@
+=================== Commands ====================
+mkdir  => o create a directory
+cd     => cd change directory
+dotnet new mvc  => create mvc project
+dotnet build	=>to build project 
+dotnet restore => to restore packages
+dotnet run => to run a project

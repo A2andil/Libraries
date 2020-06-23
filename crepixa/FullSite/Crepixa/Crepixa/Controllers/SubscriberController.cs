@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Crepixa.Helpers;
 using Crepixa.Models;
 using Crepixa.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
 
 namespace Crepixa.Controllers
 {
@@ -77,6 +79,32 @@ namespace Crepixa.Controllers
         [HttpPost]
         public JsonResult Send(SendVM model)
         {
+            var Message = new MimeMessage();
+
+            Message.From.Add(new MailboxAddress("Crepixa", "A77mad.222andil@gmail.com"));
+
+
+            for (int i = 0; i < model.subscribers.Count; i++)
+            {
+                Message.To.Clear();
+                Message.To.Add(new MailboxAddress(model.subscribers[i].Name, model.subscribers[i].Email));
+                Message.Subject = model.Subject;
+                Message.Body = new TextPart("plain")
+                {
+                    Text = model.Message
+                };
+
+                using (var client = new MailKit.Net.Smtp.SmtpClient())
+                {
+                    client.Connect("smtp.gmail.com", 587);
+
+                    client.Authenticate(Values.Email, Values.Password);
+
+                    client.Send(Message);
+                    client.Disconnect(true);
+                }
+            }
+
             return Json("success");
         }
     }

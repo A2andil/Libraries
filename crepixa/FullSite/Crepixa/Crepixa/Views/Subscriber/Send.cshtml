@@ -3,10 +3,11 @@
     ViewData["Title"] = "Manage";
 }
 
-<button type="button" id="SendMessage" class="btn btn-success shadow-none"
-        style="margin-bottom: 5px">
-    <i class="fa fa-envelope fa-lg"></i> Send Emails
-</button>
+    <button type="button" id="SendMessage" class="btn btn-success shadow-none"
+            style="margin-bottom: 5px">
+        <i class="fa fa-envelope fa-lg" id="notloading"></i>
+        <i class="fa fa-spinner fa-spin" id="loading"></i>  Send Emails
+    </button>
 
 <a asp-controller="Subscriber" asp-action="Manage"
    class="btn btn-primary shadow-none"
@@ -14,7 +15,11 @@
     <i class="fa fa-tasks fa-lg"></i>Manage
 </a>
 <form asp-area="Security" asp-controller="Subscriber" asp-action="Send" method="post">
-    <textarea class="form-control" id="Message"></textarea>
+    <input type="text" class="form-control" 
+           placeholder="Enter Subject" 
+           style="margin-bottom: 5px"
+           id="SubjectId" />
+    <textarea class="form-control"  placeholder="Enter Message content" id="Message"></textarea>
     <table class="table" id="list_all">
         <tr class="tbl">
             <th>
@@ -69,8 +74,9 @@
             });
         }
 
-        $("#SendMessage").click(function () {
+        $('#loading').hide();
 
+        $("#SendMessage").click(function () {
             var listItems = [];
             var rows = document.getElementById('list_all').rows;
             console.log(rows.length);
@@ -89,7 +95,11 @@
                 return false;
             }
 
+            $('#loading').show();
+            $('#notloading').hide();
+
             var SenderObj = {
+                "Subject": $('#SubjectId').val(),
                 "Message": $('#Message').val(),
                 "subscribers": listItems
             };
@@ -103,7 +113,9 @@
                 dataType: 'json',
                 success: function (response) {
                     if (response == 'success') {
-                        alert('successive insertion');
+                        alert('Message Sent Successfully');
+                        $('#loading').hide();
+                        $('#notloading').show();
                         window.location.href = "/Subscriber/Manage";
                     }
                     else {

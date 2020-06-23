@@ -8,6 +8,8 @@ namespace Crepixa.ViewModels
 {
     public class SendVM
     {
+        public string Subject { get; set; }
+
         public string Message { get; set; }
 
         public List<SubscriberItem> subscribers { get; set; }
