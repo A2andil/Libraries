@@ -1,0 +1,76 @@
+﻿@model Crepixa.ViewModels.ProjectVM
+
+<form id="form" name="form"  enctype="multipart/form-data" >
+    <div class="container-fluid">
+        <div class="form-group">
+            <input asp-for="ProjectName" 
+                   class="form-control" 
+                   placeholder="Enter Project Name" />
+        </div>
+        <div class="form-group">
+            <textarea asp-for="Description"
+                      class="form-control"
+                      placeholder="Enter Project Descreiption">
+        </textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="type Tags" />
+            <ul class="list-group" style="margin-top: 5px">
+                
+            </ul>
+        </div>
+        <div class="form-group">
+            <div class="label">Select Photos</div>
+            <input id="files" name="files" type="file" size="1" multiple onchange="uploadFiles('files');" />
+        </div>
+        <div class="form-group">
+            
+        </div>
+    </div>
+</form>
+
+<!--------------------- JavaScript ------------------------>
+
+@section Scripts {
+    <script>
+        $.ajax(
+            {
+                url: "/Project/GetTags",
+                data: formData,
+                processData: false,
+                contentType: false,
+                type: "POST",
+                success: function (data) {
+                    console.log(data);
+                }
+            }
+        );
+
+        function uploadFiles(inputId) {
+            var input = document.getElementById(inputId);
+            var files = input.files;
+            var formData = new FormData();
+
+            for (var i = 0; i != files.length; i++) {
+                formData.append("files", files[i]);
+            }
+
+            formData.append('test', "hi");
+
+            console.log(formData);
+
+            $.ajax(
+                {
+                    url: "/Project/Send",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function (data) {
+                        console.log(data);
+                    }
+                }
+            );
+        }
+    </script>
+}

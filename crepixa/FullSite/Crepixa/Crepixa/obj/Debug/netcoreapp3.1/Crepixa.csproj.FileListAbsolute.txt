@@ -153,3 +153,7 @@ D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\NET
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Crepixa.csproj.CoreCompileInputs.cache
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Crepixa.MvcApplicationPartsAssemblyInfo.cache
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Company\Manage.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Company\New.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Project\New.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Project\SendTest.cshtml.g.cs

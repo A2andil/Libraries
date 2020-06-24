@@ -17,7 +17,7 @@ namespace Crepixa.Models
 
         public string EmployeeIds { get; set; }
 
-        public string TagsIds { get; set; }
+        public string Tags { get; set; }
 
         public string ImageUrls { get; set; }
     }
