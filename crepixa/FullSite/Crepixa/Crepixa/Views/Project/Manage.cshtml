@@ -1,0 +1,73 @@
+﻿@model List<Project>
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<a asp-controller="Project" asp-action="New" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i> New
+</a>
+<ul class="list-group">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <li class="list-group-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        Name:
+                    </div>
+                    <div class="col">
+                        @Model[i].Name
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        Descreption:
+                    </div>
+                    <div class="col">
+                        @Model[i].Description
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        Tags:
+                    </div>
+                    <div class="col">
+                        @for (int j = 0; j < Model[i].Tags.Split(";").Length; j++)
+                        {
+                            <a href="#">@Model[i].Tags.Split(';')[j]</a>
+                            if ((j + 1) != Model[i].Tags.Split(";").Length)
+                            {
+                                <span> - </span>
+                            }
+                        }
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                Images:
+                            </div>
+                            <div class="col">
+                                @for (int j = 0; j < Model[i].ImageUrls.Split(";").Length; j++)
+                                {
+                                    <img src="~/@Model[i].ImageUrls.Split(';')[j]" width="64" height="64" />
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <a asp-controller="Project" asp-action="Delete"
+                           asp-route-id="@Model[i].Id" class="btn btn-danger">
+                            Delete<i class="fa fa-trash fa-lg"></i>
+                        </a>
+                    </div>
+
+                </div>
+        </li>
+    }
+</ul>
+

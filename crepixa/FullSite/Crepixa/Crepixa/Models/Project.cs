@@ -11,11 +11,7 @@ namespace Crepixa.Models
 
         public string Name { get; set; }
 
-        public int CompanyId { get; set; }
-
-        public virtual Company Company { get; set; }
-
-        public string EmployeeIds { get; set; }
+        public string Description { get; set; }
 
         public string Tags { get; set; }
 

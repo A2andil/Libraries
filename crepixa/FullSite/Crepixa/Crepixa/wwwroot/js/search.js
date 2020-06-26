@@ -1,4 +1,4 @@
-﻿var tags = [], res = [], idx = -1;
+﻿var tags = [], res = [], tags_res = [], idx = -1;
 var options_list = document.getElementById('result_list');
 
 // here select tags
@@ -19,7 +19,11 @@ document.getElementById('search').addEventListener('keyup', function (e) {
             console.log(res[idx]);
             break;
         case 13:
-            console.log(res[idx]);
+            if (res.length == 0 || idx < 0) {
+                document.getElementById('search').value = '';
+                break;
+            }
+            tags_res.push(res[idx]);
             create_item(res[idx]);
             res = []; options_list.innerHTML = '';
             document.getElementById('search').value = '';
@@ -31,7 +35,6 @@ document.getElementById('search').addEventListener('keyup', function (e) {
                 if (tags[i].toLowerCase().includes(val.toLowerCase()))
                     res.push(tags[i]);
             option_list();
-            console.log(res);
             break;
     }
 });
