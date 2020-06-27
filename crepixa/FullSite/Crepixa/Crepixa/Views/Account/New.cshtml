@@ -1,0 +1,50 @@
+﻿@using Crepixa.Models;
+@using Crepixa.ViewModels;
+
+@model Crepixa.ViewModels.AccountVM
+@{
+    ViewData["Title"] = "New";
+}
+
+@using (Html.BeginForm("New", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container">
+        <div class="form-group">
+            <label for="nm">Name</label>
+            @Html.TextBoxFor(x => x.Account.FullName, new { @class = "form-control", @name = "nm" })
+        </div>
+        <div class="form-group">
+            <label for="em">Email</label>
+            @Html.TextBoxFor(x => x.Account.Email, new { @class = "form-control", @name = "em" })
+        </div>
+        <div class="form-group">
+            <label for="sal">Mobile</label>
+            @Html.TextBoxFor(x => x.Account.Mobile, new { @class = "form-control", @name = "sal" })
+        </div>
+        <div class="form-group">
+            <label for="Upload">Profile Picture</label>
+            <input asp-for="FileUpload" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="sal">Salary</label>
+            @Html.TextBoxFor(x => x.Account.Salary, new { @class = "form-control", @name = "sal" })
+        </div>
+        <div class="form-group">
+            <label for="pass">Password</label>
+            @Html.PasswordFor(x => x.Account.Password, new { @class = "form-control", @name = "pass" })
+        </div>
+        <div class="form-group">
+            <label for="role">Select Role</label>
+            @Html.DropDownListFor(x => x.Account.RoleId,
+                new SelectList(Model.Roles, "Id", "Name"),
+                new { @class = "form-control", @name = "role" })
+        </div>
+        <div class="form-group">
+            <label for="ct">Select Country</label>
+            @Html.DropDownListFor(x => x.Account.CountryId,
+                new SelectList(Model.Countries, "Id", "NameEn"),
+                new { @class = "form-control", @name = "ct" })
+        </div>
+        <input type="submit" class="form-control btn btn-primary" value="New Account" />
+    </div>
+}

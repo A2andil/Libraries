@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Account>
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<a asp-controller="Account" asp-action="New" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i> New
+</a>
+<table class="table">
+
+    <tr class="tbl">
+        <th>
+            Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Mobile
+        </th>
+        <th>
+            Image
+        </th>
+        <th>
+            Operations
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="tbl">
+            <td>
+                @item.FullName
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.Mobile
+            </td>
+            <td>
+                <img src="~/@item.PictureUrl" style="width: 32px; height: 32px" />
+            </td>
+            <td>
+                <a asp-controller="Account" asp-action="Delete"
+                   asp-route-id="@item.Id" class="red">
+                    <i class="fa fa-trash fa-lg"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
