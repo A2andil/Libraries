@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Crepixa.Helpers;
 using Crepixa.Models;
 using Crepixa.ViewModels;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Crepixa.Controllers
@@ -65,6 +67,38 @@ namespace Crepixa.Controllers
             _context.Remove(obj);
             _context.SaveChanges();
             return RedirectToAction("Manage", "Account");
+        }
+
+        public IActionResult Login()
+        {
+            if (HttpContext.Session.GetInt32(Values.Key) != null)
+            {
+                return RedirectToAction("Manage", "Account");
+            }
+            return View();
+        }
+
+        public IActionResult Logout()
+        {
+            if (HttpContext.Session.GetInt32(Values.Key) != null)
+            {
+                HttpContext.Session.Remove(Values.Key);
+                return RedirectToAction("Login", "Account");
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginVM model)
+        {
+            var user = _context.Accounts
+                .Where(x => x.Email == model.Email && x.Password == model.Password).SingleOrDefault();
+            if (user != null)
+            {
+                HttpContext.Session.SetInt32(Values.Key, user.Id);
+                return RedirectToAction("Manage", "Account");
+            }
+            return View();
         }
     }
 }

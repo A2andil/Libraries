@@ -1,0 +1,14 @@
+﻿@model Survey
+@{
+    ViewData["Title"] = "Ordinary";
+}
+@using (Html.BeginForm("ordinary", "Survy", FormMethod.Post))
+{
+    <div class="container">
+        <div class="form-group">
+            <label for="q">Question</label>
+            @Html.TextBoxFor(x => x.Question, new { @class = "form-control", @name = "q" })
+        </div>
+        <input type="submit" class="form-control btn btn-primary" value="New Question" />
+    </div>
+}

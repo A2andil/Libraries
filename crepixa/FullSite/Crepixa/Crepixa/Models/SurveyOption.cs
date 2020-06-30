@@ -10,7 +10,5 @@ namespace Crepixa.Models
         public int Id { get; set; }
 
         public string Options { get; set; }
-
-        public string Answer { get; set; }
     }
 }

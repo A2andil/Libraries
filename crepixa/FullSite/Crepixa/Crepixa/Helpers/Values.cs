@@ -22,5 +22,13 @@ namespace Crepixa.Helpers
                 return "ASDfgh@120";
             }
         }
+
+        public static string Key
+        {
+            get
+            {
+                return "SessionId";
+            }
+        }
     }
 }

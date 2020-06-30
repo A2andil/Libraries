@@ -1,0 +1,43 @@
+﻿@model List<Survey>
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<a asp-controller="Survy" asp-action="Optional" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i>Optional Question
+</a>
+<a asp-controller="Survy" asp-action="Ordinary" class="btn btn-primary shadow-none"
+   style="margin-bottom: 5px">
+    <i class="fa fa-pencil-square-o fa-lg"></i>Ordinary Question
+</a>
+<table class="table">
+    <tr class="tbl">
+        <th>
+            Question
+        </th>
+        <th>
+            Type
+        </th>
+        <th>
+            Operations
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="tbl">
+            <td>
+                @item.Question
+            </td>
+            <td>
+                @(item.OptionsId != -1? "Optional" : "Ordinary")
+            </td>
+            <td>
+                <a asp-controller="Survy" asp-action="Delete"
+                   asp-route-id="@item.Id" class="red">
+                    <i class="fa fa-trash fa-lg"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>

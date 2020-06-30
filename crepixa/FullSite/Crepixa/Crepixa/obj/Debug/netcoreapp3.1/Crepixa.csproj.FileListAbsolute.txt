@@ -159,3 +159,7 @@ D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Raz
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Project\Manage.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Account\New.cshtml.g.cs
 D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Account\Manage.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Survy\Manage.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Survy\Optional.cshtml.g.cs
+D:\Github\Libraries\crepixa\FullSite\Crepixa\Crepixa\obj\Debug\netcoreapp3.1\Razor\Views\Survy\Ordinary.cshtml.g.cs
