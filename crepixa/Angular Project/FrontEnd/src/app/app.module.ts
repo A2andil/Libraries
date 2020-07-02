@@ -7,6 +7,7 @@ import { TestingApiComponent } from './testing-api/testing-api.component';
 import {HttpClientModule} from '@angular/common/http';
 import { LeftHeaderComponent } from './Components/left-header/left-header.component';
 import { RightHeaderComponent } from './Components/right-header/right-header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RightHeaderComponent } from './Components/right-header/right-header.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

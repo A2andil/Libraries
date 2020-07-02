@@ -1,18 +1,66 @@
-<div class="container" style="background-color: yellow; height: 500px;">
-    <div class="Logo">
-        <img src="">
-    </div>
-    <div class="PixelsTalk">
-        WE <br>
-        MAKE <br>
-        PIXELS <br>
-        TALK <br>
-    </div>
-    <div class="BuildBrand">
-        <div class="BrandText">
-            BUILD YOUR BRAND
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="BrandBox col-lg-7 col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <a class="navbar-brand" href="#">Crepixa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">
+                        <span class="WhiteColor">HOME</span> 
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link WhiteColor" href="#">
+                        <span class="WhiteColor">ABOUT US</span> 
+                    </a>
+                    <a class="nav-item nav-link" href="#">
+                        <span class="WhiteColor">PORTOFOLIO</span> 
+                    </a>
+                    <a class="nav-item nav-link" href="#">
+                        <span class="WhiteColor">TEAM</span> 
+                    </a>
+                    <a class="nav-item nav-link" href="#">
+                        <span class="WhiteColor Shawodoe">CONTACT</span>
+                    </a>
+                    <a class="nav-item nav-link" href="#">
+                        <span class="BlackColor">SUBSCRIBE</span>
+                        
+                    </a>
+                  </div>
+                </div>
+            </nav>
+            <div class="PixelsTalk">
+                WE <br>
+                MAKE <br>
+                PIXELS <br>
+                TALK <br>
+            </div>
+            <div class="BuildBrand">
+                <div class="BrandText">
+                    BUILD YOUR BRAND
+                </div>
+                <div class="BrandTriangle">
+                </div>
+            </div>
         </div>
-        <div class="BrandTriangle">
+
+
+        <div class="BrandBox col-lg-5 col-sm-12" style="position: relative;">
+
+            <ngb-carousel *ngIf="images.length > 0">
+                <ng-template ngbSlide *ngFor="let image of images">
+                    <div class="picsum-img-wrapper">
+                      <img [src]="image" class = "ItemCursol" >
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>Second slide label</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </ng-template>
+              </ngb-carousel>
         </div>
-    </div>
 </div>
