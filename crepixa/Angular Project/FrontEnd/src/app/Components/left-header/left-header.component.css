@@ -109,3 +109,21 @@
     background-color: red;
     height: 200px;
 }
+
+.right {
+    width: 30px;
+}
+
+.img_block {
+    background-image:url('https://picsum.photos/id/944/900/500');
+    height: 300px;
+    background-size: cover;
+}
+
+.pr {
+    background-color: black;
+}
+
+.left_st {
+    margin-top: 250px;
+}
