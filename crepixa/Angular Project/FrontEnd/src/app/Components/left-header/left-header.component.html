@@ -86,7 +86,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
           <div class="row">
-            <div class="col-2 text-center" *ngFor="let x of done(0)" style="background-color: yellow; height: 100px; line-height: 100px;">
+            <div class="col-2 text-center c_item" *ngFor="let x of done(0)">
                 {{x}}
             </div>
           </div>
@@ -94,7 +94,7 @@
 
       <div class="carousel-item" *ngFor = "let i of elements">
         <div class="row">
-          <div class="col-2 text-center" *ngFor="let j of done(i)" style="background-color: yellow; height: 100px; line-height: 100px;">
+          <div class="col-2 text-center c_item" *ngFor="let j of done(i)">
               {{j}}
           </div>
         </div>
@@ -309,10 +309,12 @@
     </div>
     <div class="col-lg-6 col-md-12 col-sm-12 bg_color">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#" class="lnk">HOME</a></li>
+            <li><a href="#" class="lnk">ABOUT US</a></li>
+            <li><a href="#" class="lnk">PORTOFOLIO</a></li>
+            <li><a href="#" class="lnk">TEAM</a></li>
+            <li><a href="#" class="lnk">CONTACT</a></li>
+            <li><a href="#" class="active">SUBSCRIBE</a></li>
           </ul>          
     </div>
 </div>

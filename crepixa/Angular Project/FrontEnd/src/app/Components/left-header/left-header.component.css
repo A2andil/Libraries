@@ -110,6 +110,12 @@
     height: 200px;
 }
 
+.c_item {
+    background-color: yellow;
+    height: 100px; line-height: 100px;
+    color: black;
+}
+
 .right {
     width: 30px;
 }
@@ -266,4 +272,12 @@ ul {
 
  .bg_color {
      background-color: black;
+ }
+
+ .lnk {
+     color:white;
+ }
+
+ .active {
+     color:yellow;
  }
