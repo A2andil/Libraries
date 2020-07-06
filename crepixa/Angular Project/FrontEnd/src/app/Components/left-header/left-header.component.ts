@@ -27,8 +27,10 @@ export class LeftHeaderComponent implements OnInit {
       this.z = (i + x) % this.elements.length;
       this.ans.push(this.z == 0? this.elements.length : this.z);
     }
-    console.log(this.ans);
     return this.ans;
   }
 
+  upd() {
+    window.scroll(0,0);
+  }
 }
