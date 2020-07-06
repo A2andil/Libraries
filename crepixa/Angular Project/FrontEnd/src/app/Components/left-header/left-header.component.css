@@ -245,7 +245,7 @@
 
 .footer {
     background-color: black;
-    height: 250px;
+    min-height: 250px;
 }
 
 /*------------------ Footer -------------------*/
@@ -262,7 +262,8 @@ ul {
  }
  li {
     float: left;
-    line-height: 250px;
+    line-height: 40px;
+    margin-top: 105px;
  }
  li a {
     display: block;
@@ -276,8 +277,24 @@ ul {
 
  .lnk {
      color:white;
+     font-size: 14px;
  }
 
  .active {
      color:yellow;
+ }
+
+
+ /*-------------------All Sizes------------------------*/
+
+ @media only screen and (min-width: 320px) and (max-width: 500px) {
+    .lnk {
+        color:white;
+        font-size: 12px;
+    }
+    li {
+        float: left;
+        line-height: 40px;
+        margin-top: 10px;
+     }
  }
