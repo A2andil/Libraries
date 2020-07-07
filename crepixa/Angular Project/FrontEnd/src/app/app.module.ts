@@ -8,13 +8,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { LeftHeaderComponent } from './Components/left-header/left-header.component';
 import { RightHeaderComponent } from './Components/right-header/right-header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestingApiComponent,
     LeftHeaderComponent,
-    RightHeaderComponent
+    RightHeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

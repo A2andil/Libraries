@@ -179,7 +179,7 @@
     height: 110px;
 }*/
 
-@keyframes bounceIn {
+/*@keyframes bounceIn {
     0% {
         margin-left: 0px;
         margin-top: 10px;
@@ -192,7 +192,7 @@
         width: 110px;
         height: 110px;
     }
-}
+}*/
 
 .build_brand {
     background-color: yellew;
