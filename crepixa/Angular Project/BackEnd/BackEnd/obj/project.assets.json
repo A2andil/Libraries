@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\Libraries\\crepixa\\Anular Project\\BackEnd\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "D:\\Github\\Libraries\\crepixa\\Angular Project\\BackEnd\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "D:\\Github\\Libraries\\crepixa\\Anular Project\\BackEnd\\BackEnd\\BackEnd.csproj",
+      "projectPath": "D:\\Github\\Libraries\\crepixa\\Angular Project\\BackEnd\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\Libraries\\crepixa\\Anular Project\\BackEnd\\BackEnd\\obj\\",
+      "outputPath": "D:\\Github\\Libraries\\crepixa\\Angular Project\\BackEnd\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\OS\\AppData\\Roaming\\NuGet\\NuGet.Config",

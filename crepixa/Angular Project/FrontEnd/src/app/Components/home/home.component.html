@@ -2,7 +2,7 @@
     <div class="row">
         <div class="BrandBox col-xl-6 col-lg-7 col-sm-12">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <a class="navbar-brand" href="#">Crepixa</a>
+                <a class="navbar-brand" href="#"><img [src] = logo class="lgo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,7 +76,7 @@
     </div>
     <div class="col-lg-6 col-sm-12 heading">
         <div class="second_sec div_img_sec">
-            <img src="https://picsum.photos/id/944/900/500" class="img_sec">
+            <img [src]= picture class="img_sec">
         </div>
     </div>
 </div>
@@ -86,16 +86,16 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
           <div class="row">
-            <div class="col-2 text-center c_item" *ngFor="let x of done(0)">
-                {{x}}
+            <div class="col-2 text-center c_item" *ngFor="let x of donex(0)">
+                <img [src] = x.image class="img_st">
             </div>
           </div>
       </div>
 
-      <div class="carousel-item" *ngFor = "let i of elements">
+      <div class="carousel-item" *ngFor = "let i of elementsx">
         <div class="row">
-          <div class="col-2 text-center c_item" *ngFor="let j of done(i)">
-              {{j}}
+          <div class="col-2 text-center c_item" *ngFor="let j of donex(i.id)">
+            <img [src] = j.image class="img_st">
           </div>
         </div>
     </div>
@@ -110,22 +110,11 @@
     </a>
   </div>
 
-  <!--Anthor Div-->
+  <!-------------Projects---------------->
   <div class="row pr">
-      <div class="col-md-4 col-sm-12 img_block">
-          <div class="row left_st">
-              <div class="col-2">
-                  <div style="background-color: yellow; width: 45px; height: 45px;">
-
-                  </div>
-              </div>
-              <div class="col-10">
-                 <span style="color: white;">Arabian Restaurant</span>
-                 <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, mollitia autem! Tenetur rem maiores fuga nobis molestias tempore porro, molestiae iure ratione, vero iusto blanditiis optio, unde impedit quibusdam earum. | limitTo: 20</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4 col-sm-12 img_block">
+    <div class="col-md-4 col-sm-12 img_block" 
+    *ngFor = "let i of getAllProjects()" 
+    style="background-image:url('{{i.image}}');">
         <div class="row left_st">
             <div class="col-2">
                 <div style="background-color: yellow; width: 45px; height: 45px;">
@@ -133,67 +122,12 @@
                 </div>
             </div>
             <div class="col-10">
-               <span style="color: white;">Arabian Restaurant</span>
-               <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, mollitia autem! Tenetur rem maiores fuga nobis molestias tempore porro, molestiae iure ratione, vero iusto blanditiis optio, unde impedit quibusdam earum. | limitTo: 20</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12 img_block">
-        <div class="row left_st">
-            <div class="col-2">
-                <div style="background-color: yellow; width: 45px; height: 45px;">
-
-                </div>
-            </div>
-            <div class="col-10">
-               <span style="color: white;">Arabian Restaurant</span>
-               <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, mollitia autem! Tenetur rem maiores fuga nobis molestias tempore porro, molestiae iure ratione, vero iusto blanditiis optio, unde impedit quibusdam earum. | limitTo: 20</p>
+               <span style="color: white;">Project title</span>
+               <p style="color: white;">Project Description...</p>
             </div>
         </div>
     </div>
   </div>
-
-  <div class="row pr">
-    <div class="col-md-4 col-sm-12 img_block">
-        <div class="row left_st">
-            <div class="col-2">
-                <div style="background-color: yellow; width: 45px; height: 45px;">
-
-                </div>
-            </div>
-            <div class="col-10">
-               <span style="color: white;">Arabian Restaurant</span>
-               <p style="color: white;">Lorem ipsum dolor sit</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12 img_block">
-        <div class="row left_st">
-            <div class="col-2">
-                <div style="background-color: yellow; width: 45px; height: 45px;">
-
-                </div>
-            </div>
-            <div class="col-10">
-               <span style="color: white;">Arabian Restaurant</span>
-               <p style="color: white;">Lorem ipsum dolor sit </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12 img_block">
-        <div class="row left_st">
-            <div class="col-2">
-                <div style="background-color: yellow; width: 45px; height: 45px;">
-
-                </div>
-            </div>
-            <div class="col-10">
-               <span style="color: white;">Arabian Restaurant</span>
-               <p style="color: white;">testing testing testing testing</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!--Anther divion-->
 
@@ -278,9 +212,9 @@
 <!--Div Build Your App-->
 
 <div class="row footer">
-    <div class="col-lg-3 col-md-6 col-sm-12 bg_color">
+    <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="footer_logo">
-            Logo
+            <img [src] = footerlogo style="width: 100%; height: 100%;">
         </div>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-12 bg_color">
@@ -329,11 +263,6 @@
         <a href="#" class="lnk_pr">TERMS AND CONDITIONS</a>
     </div>
     <div class="col-md-4 col-sm-12 bg-yellow" >
-        <img src="" class="social">
-        <img src="" class="social">
-        <img src="" class="social">
-        <img src="" class="social">
-        <img src="" class="social">
-        <img src="" class="social">
+         <img *ngFor = "let x of socials" [src] = x class="social" (click) = "moveto(x)">
     </div>
 </div>
