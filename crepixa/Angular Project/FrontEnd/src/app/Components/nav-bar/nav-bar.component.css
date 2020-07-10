@@ -64,7 +64,7 @@ header nav ul a.active {
     display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1276px) {
     header {
         padding: 0 20px;
         background: #fcdd15;
