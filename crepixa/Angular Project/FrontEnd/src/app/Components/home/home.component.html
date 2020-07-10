@@ -1,36 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="BrandBox col-xl-6 col-lg-7 col-sm-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <a class="navbar-brand" href="#"><img [src] = logo class="lgo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">
-                        <span class="WhiteColor">HOME</span> 
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span class="WhiteColor">ABOUT US</span> 
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span class="WhiteColor">PORTOFOLIO</span> 
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span class="WhiteColor">TEAM</span> 
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span class="WhiteColor Shawodoe">CONTACT</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">
-                        <span class="BlackColor">SUBSCRIBE</span>
-                        
-                    </a>
-                  </div>
-                </div>
-            </nav>
+        <div class="BrandBox col-lg-6 col-sm-12">
             <div class="PixelsTalk">
                 WE <br>
                 MAKE <br>
@@ -46,23 +16,12 @@
             </div>
         </div>
 
-
-        <div class="BrandBox col-xl-6 col-lg-5 col-sm-12" style="position: relative;">
-
-            <ngb-carousel *ngIf="images.length > 0">
-                <ng-template ngbSlide *ngFor="let image of images">
-                    <div class="picsum-img-wrapper">
-                      <img [src]="image" class = "ItemCursol" >
-                    </div>
-                    <div class="carousel-caption">
-                      <h3>Second slide label</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                  </ng-template>
-              </ngb-carousel>
+        <div class="BrandBox col-lg-6 col-sm-12" style="background-color:black">
+            <app-slider-bar></app-slider-bar>
         </div>
 </div>
 
+<!-----------------Specific Profile------------------->
 <div class="row">
     <div class="col-lg-6 col-sm-12 heading">
         <div class="second_sec">
@@ -70,8 +29,8 @@
             <span class="name_sec des_sec">YOUTEBER AND CONTENT MAKER</span>
         </div>
         <div class="second_sec">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo non aut veritatis dolores voluptatem vel totam. Quia, blanditiis ipsam magni, voluptas vitae suscipit eius numquam vel impedit dignissimos aspernatur. 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo accusantium eum pariatur sequi! Odit quos rerum quaerat tempora eligendi et delectus laudantium non animi, voluptate voluptas quae odio aliquam aperiam.  
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo non aut veritatis dolores voluptatem vel totam. Quia, blanditiis ipsam magni, voluptas vitae suscipit eius numquam vel impedit dignissimos aspernatur. 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus temporibus iusto quod enim nobis repellendus saepe laudantium nemo dolor vel totam assumenda, quis fugit unde architecto distinctio tempora sit? Illum."
         </div>
     </div>
     <div class="col-lg-6 col-sm-12 heading">
@@ -81,7 +40,7 @@
     </div>
 </div>
 
-<!--Anther Division-->
+<!---------------------Profiles------------------------->
 <div id="carouselExampleControls" class="carousel slide row" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -129,63 +88,37 @@
     </div>
   </div>
 
-<!--Anther divion-->
+<!---------------Services------------------------>
 
 <div class="services">
     <div class="row">
-        <div class="col" style="background-color: red">
+        <div class="col" *ngFor= "let i of services1">
             <div class="service_block">
-                 Test
-            </div>
-         </div>
-         <div class="col" style="background-color: red">
-             <div class="service_block">
-                 Test
-            </div>
-         </div>
-         <div class="col text-center" style="background-color: red">
-             <div class="service_block">
-                 <div class="service_img_div">
-                    <img src="#" class="service_img">
-                 </div>
-                 <span class="sercices_des">klsmcdns  kldsn</span>
-            </div>
-         </div>
-    </div>
-</div>
-
-<div class="services4">
-    <div class="row">
-        <div class="col" style="background-color: red">
-            <div class="service_block">
-                 Test
-            </div>
-         </div>
-         <div class="col" style="background-color: red">
-             <div class="service_block">
-                 Test
-            </div>
-         </div>
-         <div class="col text-center" style="background-color: red">
-             <div class="service_block">
-                 <div class="service_img_div">
-                    <img src="#" class="service_img">
-                 </div>
-                 <span class="sercices_des">klsmcdns  kldsn</span>
-            </div>
-         </div>
-         <div class="col text-center" style="background-color: red">
-            <div class="service_block">
-                <div class="service_img_div">
-                   <img src="#" class="service_img">
+                <div style="width: 100%; height: 80%">
+                    <img [src]=i.image style="width: 100%; height: 100%">
                 </div>
-                <span class="sercices_des">klsmcdns  kldsn</span>
-           </div>
-        </div>
+                 <hr class="services_line"/>
+                 <span>{{i.name}}</span>
+            </div>
+         </div>
     </div>
 </div>
 
-<!--Div Build Your App-->
+<div class="services" style="width: 80%; margin-top: 75px;">
+    <div class="row">
+        <div class="col" *ngFor= "let i of services2">
+            <div class="service_block service_block2">
+                <div style="width: 100%; height: 80%">
+                    <img [src]=i.image style="width: 100%; height: 100%">
+                </div>
+                 <hr class="services_line"/>
+                 <span>{{i.name}}</span>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!------------------Build Your App ------------------->
 <div class="row build_brand">
     <div class="col col_brand">
         <div class="BuildBrandBig">
@@ -201,15 +134,11 @@
         <div class="make_pixel line_w">
             <hr class="line_style">
         </div>
-
-        <div style="z-index: 10; position: absolute; right: 20px; bottom: 20px;">
-            <a (click) = "upd()" class="btn btn-primary">^</a>
-        </div>
     </div>
 </div>
 
 
-<!--Div Build Your App-->
+<!------------------Footer------------------->
 
 <div class="row footer">
     <div class="col-lg-3 col-md-6 col-sm-12">
@@ -249,7 +178,10 @@
             <li><a href="#" class="lnk">TEAM</a></li>
             <li><a href="#" class="lnk">CONTACT</a></li>
             <li><a href="#" class="active">SUBSCRIBE</a></li>
-          </ul>          
+          </ul> 
+          <div style="z-index: 10; position: absolute; right: 20px; bottom: 20px;">
+            <a (click) = "upd()" class="btn btn-primary" style="background-image: url('assets/images/rowup.png')">^</a>
+        </div>         
     </div>
 </div>
 
@@ -266,3 +198,5 @@
          <img *ngFor = "let x of socials" [src] = x class="social" (click) = "moveto(x)">
     </div>
 </div>
+
+<app-nav-bar></app-nav-bar>

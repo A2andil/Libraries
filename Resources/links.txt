@@ -1,0 +1,9 @@
+================================================= Update Angular Version ==================================================
+https://stackoverflow.com/questions/53096996/angular-cli-error-the-serve-command-requires-to-be-run-in-an-angular-project-b
+https://stackoverflow.com/questions/60546860/ng-update-error-the-angular-devkit-schematics-package-cannot-be-resolved
+--------------------------------------Commands------------------------------------------------------------------------
+npm ls @angular-devkit/schematics
+npm install @angular-devkit/schematics
+ng update @angular/cli --migrate-only --from=<WhateverVersionYouAreCurrentlyOn>
+e.g: ng update @angular/cli --migrate-only --from=1.7.3
+===========================================================================================================================

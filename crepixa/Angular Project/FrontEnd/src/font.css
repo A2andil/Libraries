@@ -1,0 +1,16 @@
+@font-face {
+    font-family: lato;
+    src: url(assets/fonts/Poppins-Thin.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: base-neue;
+    src: url(assets/fonts/BebasNeueBold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: base-regular;
+    src: url(assets/fonts/BebasNeueRegular.otf) format("opentype");
+}
+
+
