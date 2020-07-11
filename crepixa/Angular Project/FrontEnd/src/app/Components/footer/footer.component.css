@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.lnk_pr {
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 40px;
+    font-size: small;
+    color: black;
+ }
+
+ .bg-yellow {
+    background-color:  #fcdd15;
+    color: white;
+}
+
+.social {
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 770px) {
+    .lnk_pr {
+       margin-left: 10px;
+       margin-right: 5px;
+     }
+}

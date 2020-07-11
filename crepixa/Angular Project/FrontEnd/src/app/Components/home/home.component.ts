@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   logo:string = "assets/Images/Logo.png";
-  footerlogo:string = "assets/Images/footerlogo.png";
   picture:string = "assets/Images/Person.png";
   socials = ['assets/Images/be.png', 'assets/Images/facebook.png',
             'assets/Images/telegram.png', 'assets/Images/twitter.png',

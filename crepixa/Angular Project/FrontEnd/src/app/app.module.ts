@@ -11,6 +11,8 @@ import { AdminComponent } from './Components/admin/admin.component';
 import { P404Component } from './Components/p404/p404.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { SliderBarComponent } from './Components/slider-bar/slider-bar.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { ContactComponent } from './Components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { SliderBarComponent } from './Components/slider-bar/slider-bar.component
     P404Component,
     NavBarComponent,
     SliderBarComponent,
+    FooterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

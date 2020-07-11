@@ -1,0 +1,93 @@
+
+@media (max-width: 1210px) {
+    .contacts {
+        min-width: 300px;
+     }
+ }
+
+/*from first*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main_div {
+    height: 260px;
+    background-color: black;
+}
+
+ .logo_div {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    height: 100%;
+ }
+
+ .img_container {
+     width: 270px;
+     height: 55px;
+     margin: 0 auto;
+     margin-top: 70px;
+ }
+
+ .img_box {
+     width: 60%;
+     height: 100%;
+ }
+
+ .font_size {
+     font-size: 12px;
+     display: block;
+     color: white;
+     font-weight: bold;
+     margin-top: 60px;
+}
+
+ .address {
+    margin: 60px auto;
+ }
+
+ .address_c {
+    height: 260px;
+ }
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+ }
+ li {
+    float: left;
+    line-height: 40px;
+    margin-top: 105px;
+ }
+ li a {
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+ }
+
+ .lnk_pr {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.lnk {
+    color:white;
+    font-size: 14px;
+}
+
+.txt-yellow {
+    color:  #fcdd15;
+}
+
+
+ .bg_color {
+     background-color: black;
+ }
+
