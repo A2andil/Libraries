@@ -7,6 +7,8 @@ import { P404Component } from './Components/p404/p404.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { SliderBarComponent } from './Components/slider-bar/slider-bar.component';
 import { ContactComponent } from './Components/contact/contact.component';
+import { ServicesComponent } from './Components/services/services.component';
+import { ProfilesComponent } from './Components/profiles/profiles.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'bar', component: NavBarComponent},
   {path: 'admin/login', component: LoginComponent},
   {path: 'footer', component: ContactComponent},
+  {path: 'services', component: ServicesComponent},
+  {path: 'pro', component: ProfilesComponent},
   {path:'**', component: P404Component}
 ];
 

@@ -13,6 +13,8 @@ import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { SliderBarComponent } from './Components/slider-bar/slider-bar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ContactComponent } from './Components/contact/contact.component';
+import { ServicesComponent } from './Components/services/services.component';
+import { ProfilesComponent } from './Components/profiles/profiles.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ContactComponent } from './Components/contact/contact.component';
     SliderBarComponent,
     FooterComponent,
     ContactComponent,
+    ServicesComponent,
+    ProfilesComponent,
   ],
   imports: [
     BrowserModule,

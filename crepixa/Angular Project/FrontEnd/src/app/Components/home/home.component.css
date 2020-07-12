@@ -82,13 +82,13 @@
 
 .second_sec {
     text-justify: inter-character;
-    width: 460px;
+    width: 420px;
     float: none;
     margin: 0 auto;
     color: white;
     font-family: sans-serif;
     font-size: large;
-    margin-top: 40px;
+    margin-top: 50px;
     font-family: 'base-regular';
 }
 
@@ -106,7 +106,7 @@
 
 .img_sec {
     height: 90%;
-    width: 350px;
+    width: 400px;
     float: none;
     margin-top: 5%;
     border-radius: 1%;
@@ -152,12 +152,6 @@
     margin-top: 250px;
 }
 
-.services {
-    min-width: 450px;
-    width: 50%; margin: 0 auto;
-    height: 100px;
-    margin-top: 50px;
-}
 
 .services4 {
     min-width: 430px;
@@ -165,15 +159,6 @@
     margin: 0 auto;
     height: 100px;
     margin-top: 50px;
-}
-
-
-.service_block {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    text-align: center;
-    cursor: pointer;
 }
 
 .service_block2 {
@@ -310,19 +295,6 @@ ul {
      margin-left: 15px;
      cursor: pointer;
  }
-
- .services_line {
-    width: 50%;
-    background-color: rgb(172, 172, 166);
-    opacity: 4px; height: 2px;
-    margin: 0px auto;
-    margin-top: 10px;
-    opacity: 0%;
-}
-.service_block:hover > hr {
-    opacity: 100%;
-}
-
  /*-------------------All Sizes------------------------*/
 
  @media only screen and (min-width: 701px) and (max-width: 800px) {

@@ -25,9 +25,19 @@
     margin-bottom: 12px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1000px) {
+    .topp {
+        margin-top: 66px;
+    }
+ }
+
+
+@media (max-width: 778px) {
     .lnk_pr {
        margin-left: 10px;
        margin-right: 5px;
+     }
+     .topp {
+         margin-top: 220px;
      }
 }

@@ -1,22 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-profiles',
+  templateUrl: './profiles.component.html',
+  styleUrls: ['./profiles.component.css']
 })
-export class HomeComponent implements OnInit {
-  logo:string = "assets/Images/Logo.png";
-  picture:string = "assets/Images/Person.png";
-  socials = ['assets/Images/be.png', 'assets/Images/facebook.png',
-            'assets/Images/telegram.png', 'assets/Images/twitter.png',
-            'assets/Images/fi.png', 'assets/Images/instagram.png'];
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+export class ProfilesComponent implements OnInit {
 
-  ans = [];
+  c = 'assets/Images/Asset23.png';
+  g
   constructor() { }
-
-  elements = [1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12, 13]
+  rs = [];
+  idx = 0;
 
   elementsx = [
     {'id' : 1, 'image' : 'assets/Images/Asset23.png'},
@@ -29,15 +24,29 @@ export class HomeComponent implements OnInit {
     {'id' : 8, 'image' : 'assets/Images/Asset26.png'}
   ];
 
+  ngOnInit(): void {
+    for (let j = 0; j < 7; j++)
+      this.rs.push(this.elementsx[j].image);
+  }
+
+  ans = [];
+
+  elements = [1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+
+
+  reset() {
+    this.idx += 1;
+    for (let j = 0; j < 6; j++) {
+      this.rs[j] = this.rs[j + 1];
+    }
+    this.rs[6] = this.elementsx[(this.idx + 7) % this.elementsx.length].image;
+  }
+
 
  sz = 6;
  z = 0;
  v = 0;
-
-
-  ngOnInit(): void {
-    console.log(this.images);
-  }
 
   done(x) {
     this.ans = [];
@@ -69,4 +78,5 @@ export class HomeComponent implements OnInit {
   getAllProjects() {
     return this.elementsx.slice(0, 6);
   }
+
 }

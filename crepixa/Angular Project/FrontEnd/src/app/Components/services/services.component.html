@@ -1,0 +1,27 @@
+<div class="services">
+    <div class="row">
+        <div class="col" *ngFor= "let i of services1">
+            <div class="service_block">
+                <div style="width: 100%; height: 80%">
+                    <img [src]=i.image style="width: 100%; height: 100%">
+                </div>
+                 <hr class="services_line"/>
+                 <span>{{i.name}}</span>
+            </div>
+         </div>
+    </div>
+</div>
+
+<div class="services plus">
+    <div class="row ">
+        <div class="col" *ngFor= "let i of services2">
+            <div class="service_block service_block2">
+                <div style="width: 100%; height: 80%">
+                    <img [src]=i.image style="width: 100%; height: 100%">
+                </div>
+                 <hr class="services_line"/>
+                 <span>{{i.name}}</span>
+            </div>
+         </div>
+    </div>
+</div>

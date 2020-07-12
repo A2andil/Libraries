@@ -41,83 +41,10 @@
 </div>
 
 <!---------------------Profiles------------------------->
-<div id="carouselExampleControls" class="carousel slide row" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <div class="row">
-            <div class="col-2 text-center c_item" *ngFor="let x of donex(0)">
-                <img [src] = x.image class="img_st">
-            </div>
-          </div>
-      </div>
-
-      <div class="carousel-item" *ngFor = "let i of elementsx">
-        <div class="row">
-          <div class="col-2 text-center c_item" *ngFor="let j of donex(i.id)">
-            <img [src] = j.image class="img_st">
-          </div>
-        </div>
-    </div>
-    </div>
-    <a class="carousel-control-prev right" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next right" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <!-------------Projects---------------->
-  <div class="row pr">
-    <div class="col-md-4 col-sm-12 img_block" 
-    *ngFor = "let i of getAllProjects()" 
-    style="background-image:url('{{i.image}}');">
-        <div class="row left_st">
-            <div class="col-2">
-                <div style="background-color: yellow; width: 45px; height: 45px;">
-
-                </div>
-            </div>
-            <div class="col-10">
-               <span style="color: white;">Project title</span>
-               <p style="color: white;">Project Description...</p>
-            </div>
-        </div>
-    </div>
-  </div>
 
 <!---------------Services------------------------>
 
-<div class="services">
-    <div class="row">
-        <div class="col" *ngFor= "let i of services1">
-            <div class="service_block">
-                <div style="width: 100%; height: 80%">
-                    <img [src]=i.image style="width: 100%; height: 100%">
-                </div>
-                 <hr class="services_line"/>
-                 <span>{{i.name}}</span>
-            </div>
-         </div>
-    </div>
-</div>
-
-<div class="services" style="width: 80%; margin-top: 75px;">
-    <div class="row">
-        <div class="col" *ngFor= "let i of services2">
-            <div class="service_block service_block2">
-                <div style="width: 100%; height: 80%">
-                    <img [src]=i.image style="width: 100%; height: 100%">
-                </div>
-                 <hr class="services_line"/>
-                 <span>{{i.name}}</span>
-            </div>
-         </div>
-    </div>
-</div>
-
+<app-services></app-services>
 <!------------------Build Your App ------------------->
 <div class="row build_brand">
     <div class="col col_brand">
@@ -144,7 +71,6 @@
 
 <!-------------Last Contact------------------>
 
-<app-footer></app-footer>
 
 <app-nav-bar></app-nav-bar>
 
