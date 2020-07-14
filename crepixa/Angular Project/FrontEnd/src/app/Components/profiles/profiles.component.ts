@@ -7,76 +7,88 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilesComponent implements OnInit {
 
-  c = 'assets/Images/Asset23.png';
-  g
   constructor() { }
-  rs = [];
-  idx = 0;
+  rs = []; idx = 0;
+  next = 'assets/Users/next.png';
+  selected = 'assets/Users/icon1.png';
+  current_obj = {
+    'name' : 'MAZEN ALSAWAF',
+    'title' : 'YOUTEBER AND CONTENT MAKER',
+    'image' : 'assets/Images/Person.png',
+    'description' : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo non aut veritatis dolores voluptatem vel totam. Quia, blanditiis ipsam magni, voluptas vitae suscipit eius numquam vel impedit dignissimos aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus temporibus iusto quod enim nobis repellendus saepe laudantium nemo dolor vel totam assumenda, quis fugit unde architecto distinctio tempora sit? Illum.',
+    'projects' : []
+  }
+  selected_projects = [];
 
-  elementsx = [
-    {'id' : 1, 'image' : 'assets/Images/Asset23.png'},
-    {'id' : 2, 'image' : 'assets/Images/Asset24.png'},
-    {'id' : 3, 'image' : 'assets/Images/Asset25.png'},
-    {'id' : 4, 'image' : 'assets/Images/Asset26.png'},
-    {'id' : 5, 'image' : 'assets/Images/Asset23.png'},
-    {'id' : 6, 'image' : 'assets/Images/Asset24.png'},
-    {'id' : 7, 'image' : 'assets/Images/Asset25.png'},
-    {'id' : 8, 'image' : 'assets/Images/Asset26.png'}
+  icons = [
+    {'user' : 'mazen', 'image' : 'assets/Users/icon1.png'},
+    {'user' : 'ibrahim', 'image' : 'assets/Users/icon2.png'},
+    {'user' : 'ossama', 'image' : 'assets/Users/icon3.png'},
+    {'user' : 'ali', 'image' : 'assets/Users/icon4.png'},
+    {'user' : 'islam', 'image' : 'assets/Users/icon5.png'},
+    {'user' : 'fady', 'image' : 'assets/Users/icon6.png'},
+    {'user' : 'ehab', 'image' : 'assets/Users/icon7.png'},
+  ];
+
+  projects = [
+    {'id' : 1, 'image' : 'assets/Images/Asset23.png', 'user' : 'mazen'},
+    {'id' : 2, 'image' : 'assets/Images/Asset24.png', 'user' : 'ossama'},
+    {'id' : 3, 'image' : 'assets/Images/Asset25.png', 'user' : 'mazen'},
+    {'id' : 4, 'image' : 'assets/Images/Asset26.png', 'user' : 'ossama'},
+    {'id' : 5, 'image' : 'assets/Images/Asset23.png', 'user' : 'mazen'},
+    {'id' : 6, 'image' : 'assets/Images/Asset24.png', 'user' : 'ossama'},
+    {'id' : 7, 'image' : 'assets/Images/Asset25.png', 'user' : 'ali'},
+    {'id' : 8, 'image' : 'assets/Images/Asset26.png', 'user' : 'ali'}
   ];
 
   ngOnInit(): void {
     for (let j = 0; j < 7; j++)
-      this.rs.push(this.elementsx[j].image);
+      this.rs.push(this.icons[j].image);
+    this.change(this.selected);
+    this.current_obj.projects = this.selected_projects;
   }
 
   ans = [];
-
-  elements = [1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12, 13]
-
+  tmp = '';
 
 
   reset() {
     this.idx += 1;
-    for (let j = 0; j < 6; j++) {
+    this.tmp = this.rs[0];
+    for (let j = 0; j < this.rs.length - 1; j++) {
       this.rs[j] = this.rs[j + 1];
     }
-    this.rs[6] = this.elementsx[(this.idx + 7) % this.elementsx.length].image;
+    this.rs[this.rs.length - 1] = this.tmp;
   }
 
-
- sz = 6;
- z = 0;
- v = 0;
-
-  done(x) {
-    this.ans = [];
-    for (let i = 1; i <= this.sz; i++) {
-      this.z = (i + x) % this.elements.length;
-      this.ans.push(this.z == 0? this.elements.length : this.z);
-    }
-    return this.ans;
-  }
-
-  donex(x) {
-    this.ans = [];
-    for (let i = 1; i <= this.sz; i++) {
-      this.z = (i + x) % this.elementsx.length;
-      this.v = this.z == 0? this.elementsx.length : this.z;
-      this.ans.push(this.elementsx[this.z]);
-    }
-    return this.ans;
-  }
-
-  upd() {
-    window.scroll(0,0);
-  }
-
-  moveto(x) {
-    console.log(x);
-  }
+  sz = 6;
 
   getAllProjects() {
-    return this.elementsx.slice(0, 6);
+    return this.projects.slice(0, 6);
   }
 
+  change(s) {
+    this.selected = s;
+    for (let i = 0; i < this.icons.length; i++) {
+      if (this.icons[i].image == s) {
+        this.selected_projects = [];
+        for (let j = 0; j < this.projects.length; j++) {
+          if (this.projects[j].user == this.icons[i].user)
+              this.selected_projects.push(this.projects[j].image);
+        }
+        this.current_obj.projects = this.selected_projects;
+        if (this.icons[i].user != 'mazen') {
+            this.current_obj.name = 'name to be replaced';
+            this.current_obj.title = 'title to be replaced';
+            this.current_obj.description = 'description to be replaced';
+        }
+        else {
+          this.current_obj.name = 'MAZEN ALSAWAF';
+          this.current_obj.title = 'YOUTEBER AND CONTENT MAKER';
+          this.current_obj.description = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo non aut veritatis dolores voluptatem vel totam. Quia, blanditiis ipsam magni, voluptas vitae suscipit eius numquam vel impedit dignissimos aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus temporibus iusto quod enim nobis repellendus saepe laudantium nemo dolor vel totam assumenda, quis fugit unde architecto distinctio tempora sit? Illum.';
+        }
+        break;
+      }
+    }
+  }
 }

@@ -21,8 +21,12 @@
     height: 15px;
     margin-top: 12px;
     margin-left: 15px;
-    cursor: pointer;
     margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.topp {
+    margin-top: 0px;
 }
 
 @media (max-width: 1000px) {

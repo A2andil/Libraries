@@ -1,28 +1,59 @@
-<div style="width: 1000px; margin: 0 auto;">
-  <div class="row">
-    <div class="col" *ngFor = "let i of rs">
-      <img [src] = i class="xvx" style="width: 150px; height: 150px;">
-    </div>
-  </div>  
+<div class="row">
+  <div class="col-lg-6 col-sm-12 heading">
+      <div class="second_sec">
+          <span class="name_sec">{{current_obj.name}}</span> <br>
+          <span class="name_sec des_sec">{{current_obj.title}}</span>
+      </div>
+      <div class="second_sec">
+         {{current_obj.description}}
+      </div>
+  </div>
+  <div class="col-lg-6 col-sm-12 heading">
+      <div class="second_sec div_img_sec">
+          <img [src]= current_obj.image class="img_sec">
+      </div>
+  </div>
 </div>
-<button class="btn btn-primary" (click) = "reset()">change</button>
+
+
+<div class="container-fluid" style="background-color: black;">
+  <div class="wdth">
+    <div class="row">
+      <div class="col main_div" *ngFor = "let i of rs"
+        [ngClass] = "i == selected?'active':''">
+        <div class="img_box">
+            <img [src] = i class="org_img" (click) = "change(i)">
+        </div>
+      </div>
+      <div class="col main_div">
+        <div class="img_box">
+          <a (click) = "reset()" class="next_link">
+            <img [src]=next  class="next">
+          </a>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+
 
 
 <!-------------Projects---------------->
-  <!--<div class="row pr">
-    <div class="col-md-4 col-sm-12 img_block" 
-    *ngFor = "let i of getAllProjects()" 
-    style="background-image:url('{{i.image}}');">
-        <div class="row left_st">
-            <div class="col-2">
-                <div style="background-color: yellow; width: 45px; height: 45px;">
+<div class="row pr">
+  <div class="col-md-4 col-sm-12 img_block" 
+  *ngFor = "let i of selected_projects" 
+  style="background-image:url('{{i}}');">
+      <div class="row left_st">
+          <div class="col-2">
+              <div style="background-color: yellow; width: 45px; height: 45px;">
 
-                </div>
-            </div>
-            <div class="col-10">
-               <span style="color: white;">Project title</span>
-               <p style="color: white;">Project Description...</p>
-            </div>
-        </div>
-    </div>
-  </div>-->
+              </div>
+          </div>
+          <div class="col-10">
+             <span style="color: white;">Project title</span>
+             <p style="color: white;">Project Description...</p>
+          </div>
+      </div>
+  </div>
+</div>
+
