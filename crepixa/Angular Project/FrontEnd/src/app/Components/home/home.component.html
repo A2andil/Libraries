@@ -21,8 +21,6 @@
         </div>
 </div>
 
-<!-----------------Specific Profile------------------->
-
 <!---------------------Profiles------------------------->
 
 <app-profiles></app-profiles>
@@ -58,6 +56,6 @@
 
 <app-nav-bar></app-nav-bar>
 
-<div style="z-index: 10; position: absolute; right: 20px; bottom: 20px;">
-    <a (click) = "upd()" class="btn btn-primary" style="background-image: url('assets/images/rowup.png')">^</a>
+<div style="z-index: 10; position: fixed; right: 20px; bottom: 20px;">
+    <a (click) = "upd()" ><img [src]=upper style="width: 40px; height: 25px; cursor: pointer;"></a>
 </div>

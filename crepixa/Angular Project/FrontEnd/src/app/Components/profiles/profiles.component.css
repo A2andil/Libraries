@@ -63,7 +63,7 @@
 
 .img_block {
     height: 300px;
-    background-size: cover;
+    background-size: 100%;
     opacity: 80%;
     cursor: pointer;
 }

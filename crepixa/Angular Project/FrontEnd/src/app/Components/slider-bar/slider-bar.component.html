@@ -3,20 +3,21 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active circle"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1" class="circle"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2" class="circle"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3" class="circle"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" [src]=images[0] alt="First slide">
+        <img class="d-block w-100" [src]=img alt="First slide">
         <div class="carousel-caption d-none d-md-block" >
-            <h5>kmdkfmk lksmkn ksmkd   snd</h5>
-            <p>lds ksmdkn psmdk lpslmdkn slmdlk sd ksnk</p>
+            <h5>Arabian Resturant</h5>
+            <p>Logo design - Russia</p>
           </div>
       </div>
-      <div class="carousel-item" *ngFor = "let x of getimages()" style="height: 100%;">
+      <div class="carousel-item" *ngFor = "let x of images" style="height: 100%;">
         <img class="d-block w-100" [src]=x alt="Second slide">
         <div class="carousel-caption d-none d-md-block">
-            <h5>kmdkfmk lksmkn ksmkd   snd</h5>
-            <p>lds ksmdkn psmdk lpslmdkn slmdlk sd ksnk</p>
+            <h5>Title to be replaced...</h5>
+            <p>Content to be replaced</p>
           </div>
       </div>
     </div>

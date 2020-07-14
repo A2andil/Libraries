@@ -30,6 +30,17 @@ export class ProfilesComponent implements OnInit {
     {'user' : 'ehab', 'image' : 'assets/Users/icon7.png'},
   ];
 
+  black_icons = [
+    {'user' : 'mazen', 'image' : 'assets/Users/icon1b.png'},
+    {'user' : 'ibrahim', 'image' : 'assets/Users/icon2b.png'},
+    {'user' : 'ossama', 'image' : 'assets/Users/icon3b.png'},
+    {'user' : 'ali', 'image' : 'assets/Users/icon4b.png'},
+    {'user' : 'islam', 'image' : 'assets/Users/icon5b.png'},
+    {'user' : 'fady', 'image' : 'assets/Users/icon6b.png'},
+    {'user' : 'ehab', 'image' : 'assets/Users/icon7b.png'},
+  ];
+
+
   projects = [
     {'id' : 1, 'image' : 'assets/Images/Asset23.png', 'user' : 'mazen'},
     {'id' : 2, 'image' : 'assets/Images/Asset24.png', 'user' : 'ossama'},
@@ -65,6 +76,11 @@ export class ProfilesComponent implements OnInit {
 
   getAllProjects() {
     return this.projects.slice(0, 6);
+  }
+
+  get_black(j) {
+    var ret = this.rs[j].replace('.', 'b.');
+    return ret;
   }
 
   change(s) {

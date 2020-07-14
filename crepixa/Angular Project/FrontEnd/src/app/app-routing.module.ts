@@ -9,10 +9,12 @@ import { SliderBarComponent } from './Components/slider-bar/slider-bar.component
 import { ContactComponent } from './Components/contact/contact.component';
 import { ServicesComponent } from './Components/services/services.component';
 import { ProfilesComponent } from './Components/profiles/profiles.component';
+import { HomePageComponent } from './Components/home-page/home-page.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'home', component: HomePageComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'slide', component: SliderBarComponent},
   {path: 'bar', component: NavBarComponent},

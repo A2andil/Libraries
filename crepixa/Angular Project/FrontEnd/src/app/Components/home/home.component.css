@@ -53,11 +53,6 @@
     border-color: transparent white transparent transparent;
 }
 
-.ItemCursol{
-    width: 100%;
-    height: 400px;
-}
-
 .WhiteColor {
     color: white;
     font-weight: bold;
@@ -86,69 +81,6 @@
     height: 200px;
 }
 
-.c_item {
-    background-color: black;
-    height: 100px; line-height: 100px;
-    color: black;
-    opacity: 95%;
-}
-
-.right {
-    width: 30px;
-}
-
-.pr {
-    background-color: black;
-}
-
-
-.services4 {
-    min-width: 430px;
-    width: 70%;
-    margin: 0 auto;
-    height: 100px;
-    margin-top: 50px;
-}
-
-.service_block2 {
-    width: 150px;
-}
-
-.service_img_div {
-    width: 110px;
-    height: 110px;
-    margin: 0 auto;
-}
-.service_img {
-    margin-top: 10px;
-    width: 100px;
-    height: 100px;
-}
-
-/*.service_img:hover {
-    animation: all 1s ease-in-out;
-    animation: bounceIn 1s;
-    cursor: pointer;
-    margin-left: -5px;
-    margin-top: 5px;
-    width: 110px;
-    height: 110px;
-}*/
-
-/*@keyframes bounceIn {
-    0% {
-        margin-left: 0px;
-        margin-top: 10px;
-        width: 100px;
-        height: 100px;
-    }
-    100% {
-        margin-left: -5px;
-        margin-top: 5px;
-        width: 110px;
-        height: 110px;
-    }
-}*/
 
 .build_brand {
     background-color: #fcdd15;

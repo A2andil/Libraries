@@ -5,9 +5,9 @@
 }
 
 .main_div {
-    height: 260px;
     background-color: black;
 }
+
 .logo_div {
     width: 80%;
     height: 100%;
@@ -36,7 +36,8 @@
 }
 
  .address {
-    margin: 60px auto;
+    margin: 0px auto;
+    margin-top: 60px;
  }
 
  .address_c {
@@ -49,11 +50,13 @@
     padding: 0;
     display: block;
  }
+
  li {
     float: left;
     line-height: 40px;
     margin-top: 105px;
  }
+
  li a {
     display: block;
     padding: 8px;
@@ -87,6 +90,11 @@
  }
 
  @media (max-width: 1000px) {
+    .main_div {
+        height: 260px;
+        background-color: black;
+    }
+    
     .ddlinkes {
         background-color: black;
     }
@@ -105,14 +113,14 @@
     .address_c {
        background-color: black;
        height: 150px;
-     }
+    }
 
-     .linkes {
+    .linkes {
         background-color: black;
         height: 100px;
-     }
+    }
 
-     .lnk {
+    .lnk {
         color:white;
         font-size: 12px;
     }

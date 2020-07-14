@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  upper = 'assets/Images/rowup.png';
   logo:string = "assets/Images/Logo.png";
   socials = ['assets/Images/be.png', 'assets/Images/facebook.png',
             'assets/Images/telegram.png', 'assets/Images/twitter.png',
@@ -58,7 +59,7 @@ export class HomeComponent implements OnInit {
   }
 
   upd() {
-    window.scroll(0,0);
+    window.scroll(0, 0);
   }
 
   moveto(x) {

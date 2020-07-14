@@ -19,10 +19,11 @@
 <div class="container-fluid" style="background-color: black;">
   <div class="wdth">
     <div class="row">
-      <div class="col main_div" *ngFor = "let i of rs"
+      <div class="col main_div" *ngFor = "let i of rs; index as j"
         [ngClass] = "i == selected?'active':''">
         <div class="img_box">
-            <img [src] = i class="org_img" (click) = "change(i)">
+            <img [src] = 'i == selected? get_black(j) : i' 
+            class="org_img" (click) = "change(i)">
         </div>
       </div>
       <div class="col main_div">
