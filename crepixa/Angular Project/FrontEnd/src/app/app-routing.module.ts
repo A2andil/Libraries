@@ -4,24 +4,14 @@ import { LoginComponent } from './Components/login/login.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AdminComponent } from './Components/admin/admin.component';
 import { P404Component } from './Components/p404/p404.component';
-import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
-import { SliderBarComponent } from './Components/slider-bar/slider-bar.component';
-import { ContactComponent } from './Components/contact/contact.component';
-import { ServicesComponent } from './Components/services/services.component';
-import { ProfilesComponent } from './Components/profiles/profiles.component';
-import { HomePageComponent } from './Components/home-page/home-page.component';
+import { TeamsComponent } from './Components/teams/teams.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'home', component: HomePageComponent},
   {path: 'admin', component: AdminComponent},
-  {path: 'slide', component: SliderBarComponent},
-  {path: 'bar', component: NavBarComponent},
-  {path: 'admin/login', component: LoginComponent},
-  {path: 'footer', component: ContactComponent},
-  {path: 'services', component: ServicesComponent},
-  {path: 'pro', component: ProfilesComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'team', component: TeamsComponent},
   {path:'**', component: P404Component}
 ];
 

@@ -15,7 +15,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { ServicesComponent } from './Components/services/services.component';
 import { ProfilesComponent } from './Components/profiles/profiles.component';
-import { HomePageComponent } from './Components/home-page/home-page.component';
+import { TeamsComponent } from './Components/teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { HomePageComponent } from './Components/home-page/home-page.component';
     ContactComponent,
     ServicesComponent,
     ProfilesComponent,
-    HomePageComponent,
+    TeamsComponent,
   ],
   imports: [
     BrowserModule,
