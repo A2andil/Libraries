@@ -16,6 +16,7 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { ServicesComponent } from './Components/services/services.component';
 import { ProfilesComponent } from './Components/profiles/profiles.component';
 import { TeamsComponent } from './Components/teams/teams.component';
+import { TeamHeaderComponent } from './Components/team-header/team-header.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { TeamsComponent } from './Components/teams/teams.component';
     ServicesComponent,
     ProfilesComponent,
     TeamsComponent,
+    TeamHeaderComponent,
   ],
   imports: [
     BrowserModule,
