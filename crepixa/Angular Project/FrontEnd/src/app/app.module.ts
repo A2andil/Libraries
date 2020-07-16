@@ -17,6 +17,7 @@ import { ServicesComponent } from './Components/services/services.component';
 import { ProfilesComponent } from './Components/profiles/profiles.component';
 import { TeamsComponent } from './Components/teams/teams.component';
 import { TeamHeaderComponent } from './Components/team-header/team-header.component';
+import { NavBarTeamComponent } from './Components/nav-bar-team/nav-bar-team.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TeamHeaderComponent } from './Components/team-header/team-header.compon
     ProfilesComponent,
     TeamsComponent,
     TeamHeaderComponent,
+    NavBarTeamComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ export class TeamHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
