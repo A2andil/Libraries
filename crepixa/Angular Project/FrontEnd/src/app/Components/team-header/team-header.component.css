@@ -2,3 +2,28 @@
     height: 400px;
     background-color: #fcdd15;
 }
+
+.team {
+    width: 150px;
+    height: 300px;
+    margin:0 auto;
+    padding-top: 170px;
+    opacity: 98%;
+}
+
+.txt {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hrh {
+    height: 3px;
+    background-color: black;
+}
+
+.span_txt {
+    width: 480px;
+    font-size: 70px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
