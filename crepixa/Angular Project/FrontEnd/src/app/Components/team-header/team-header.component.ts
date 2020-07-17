@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamHeaderComponent implements OnInit {
 
+  icon = 'assets/Images/telegram.png';
+
   constructor() { }
 
   ngOnInit(): void {

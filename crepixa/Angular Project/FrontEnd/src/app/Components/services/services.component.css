@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.service_block > hr {
+    transition: 0.5s;
+}
+
 .services_line {
     width: 40%;
     background-color: #fcdd15;
