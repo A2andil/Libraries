@@ -7,13 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionaireComponent implements OnInit {
 
+
+  xs = ['Branding', 'Advertising', 'Social Media', 'Marketing', 'Motion Graphics', 'Web Design', 'App Design'];
+
   constructor() { }
 
   ngOnInit(): void {
     $('.toggle').click(function(e){
       e.preventDefault(); // The flicker is a codepen thing
       $(this).toggleClass('toggle-on');
-      $('#switch').addClass('black');
+      if ($(".black")[0]){
+        $('#switch').removeClass('black');
+      } else {
+        $('#switch').addClass('black');
+      }
    });
   }
 

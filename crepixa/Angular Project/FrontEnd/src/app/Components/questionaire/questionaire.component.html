@@ -7,12 +7,20 @@
         Choose Your Desired Service:
     </div>
 
-    <div style="margin-left: 50px;">
-        <div class='toggle' id='switch'>
-            <div class='glow-comp'></div>
-            <div class='toggle-button'></div>
+    <div class="row">
+        <div class="col-lg-3" *ngFor= "let x of xs">
+            <div class="switch_btn">
+                <div class='toggle' id='switch'>
+                    <div class='glow-comp'></div>
+                    <div class='toggle-button'></div>
+                </div>
+                <div style="margin-left: 55px; font-weight: bold;">
+                  {{ x }}
+                </div>
+            </div>
         </div>
     </div>
+
 </div>
 
 

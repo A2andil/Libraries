@@ -2,6 +2,16 @@ html{
     height: 100%;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.switch_btn {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
 body{
     height: 100%;
     background-color: #141219;
@@ -14,6 +24,7 @@ body{
 }
 
 .black {
+    transition: 0.5s;
     background-color: black;
 }
 
@@ -58,8 +69,5 @@ body{
     transition: all .3s .1s, width .1s, top .1s, bottom .1s;
 }
 
-.toggle-on #width {
-    background-color: black;
-}
 
 /*--------------------- End Switch -------------------*/
