@@ -5,11 +5,13 @@ import { HomeComponent } from './Components/home/home.component';
 import { AdminComponent } from './Components/admin/admin.component';
 import { P404Component } from './Components/p404/p404.component';
 import { TeamsComponent } from './Components/teams/teams.component';
+import { QuestionaireComponent } from './Components/questionaire/questionaire.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'admin', component: AdminComponent},
+  {path: 'questionaire', component: QuestionaireComponent},
   {path: 'login', component: LoginComponent},
   {path: 'team', component: TeamsComponent},
   {path:'**', component: P404Component}

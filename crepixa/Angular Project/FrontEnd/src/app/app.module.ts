@@ -18,6 +18,8 @@ import { ProfilesComponent } from './Components/profiles/profiles.component';
 import { TeamsComponent } from './Components/teams/teams.component';
 import { TeamHeaderComponent } from './Components/team-header/team-header.component';
 import { NavBarTeamComponent } from './Components/nav-bar-team/nav-bar-team.component';
+import { QuestionaireComponent } from './Components/questionaire/questionaire.component';
+import { QuestionaireHeaderComponent } from './Components/questionaire-header/questionaire-header.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { NavBarTeamComponent } from './Components/nav-bar-team/nav-bar-team.comp
     TeamsComponent,
     TeamHeaderComponent,
     NavBarTeamComponent,
+    QuestionaireComponent,
+    QuestionaireHeaderComponent,
   ],
   imports: [
     BrowserModule,
