@@ -1,65 +1,65 @@
-
-
-    HTML CSS 
-
-    Result 
-
-EDIT ON
-
-.switch {
-  position: relative;
-  display: inline-block;
-}
-.switch-input {
-  display: none;
-}
-.switch-label {
-  display: block;
-  width: 48px;
-  height: 24px;
-  text-indent: -150%;
-  clip: rect(0 0 0 0);
-  color: transparent;
-  user-select: none;
-}
-.switch-label::before,
-.switch-label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  cursor: pointer;
-}
-.switch-label::before {
-  width: 100%;
-  height: 100%;
-  background-color: #dedede;
-  border-radius: 9999em;
-  -webkit-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
-}
-.switch-label::after {
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
-  -webkit-transition: left 0.25s ease;
-  transition: left 0.25s ease;
-}
-.switch-input:checked + .switch-label::before {
-  background-color: #89c12d;
-}
-.switch-input:checked + .switch-label::after {
-  left: 24px;
+html{
+    height: 100%;
 }
 
-
-
-
-body {
-  text-align: center;
-  padding: 2rem;
+body{
+    height: 100%;
+    background-color: #141219;
 }
 
+#switch{
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.black {
+    background-color: black;
+}
+
+.toggle{
+    position: absolute;
+    border: 2px solid #bbbdbf;
+    border-radius: 0px;
+    -webkit-transition: border-color .6s  ease-out;
+    transition: border-color .6s  ease-out;
+    box-sizing: border-box;
+}
+
+.toggle.toggle-on{
+    border-color: black;
+    -webkit-transition: all .5s .15s ease-out;
+    transition: all .5s .15s ease-out;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    bottom: 2px;
+    right: 23px;
+    background-color: #bbbdbf;
+    border-radius: 0px; 
+    cursor: pointer;
+    -webkit-transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+    transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+}
+
+.toggle-on .toggle-button{
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    bottom: 3px;
+    right: 2px;
+    background-color: #fcdd15;
+    border-radius: 0px;
+    cursor: pointer;
+    -webkit-transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+    transition: all .3s .1s, width .1s, top .1s, bottom .1s;
+}
+
+.toggle-on #width {
+    background-color: black;
+}
+
+/*--------------------- End Switch -------------------*/
