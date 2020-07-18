@@ -10,6 +10,8 @@ export class QuestionaireComponent implements OnInit {
 
   xs = ['Branding', 'Advertising', 'Social Media', 'Marketing', 'Motion Graphics', 'Web Design', 'App Design'];
 
+  branding = ['Logo Design', 'Full Brand', 'App Design'];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -22,6 +24,10 @@ export class QuestionaireComponent implements OnInit {
         $('#switch').addClass('black');
       }
    });
+  }
+
+  printlog(v) {
+    console.log(v);
   }
 
 }

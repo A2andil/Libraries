@@ -71,3 +71,11 @@ body{
 
 
 /*--------------------- End Switch -------------------*/
+.question {
+    width: 900px;
+    min-height: 400px;
+    margin: 20px auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bbbdbf;
+}

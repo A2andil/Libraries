@@ -1,7 +1,7 @@
 <app-nav-bar-team></app-nav-bar-team>
 <app-questionaire-header></app-questionaire-header>
 
-<div style="width: 100%; height: 500px; background-color: white;">
+<div style="width: 100%; min-height: 500px; background-color: white;">
 
     <div>
         Choose Your Desired Service:
@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-lg-3" *ngFor= "let x of xs">
             <div class="switch_btn">
-                <div class='toggle' id='switch'>
+                <div class='toggle' id='switch' (click)="printlog(x)">
                     <div class='glow-comp'></div>
                     <div class='toggle-button'></div>
                 </div>
@@ -18,6 +18,30 @@
                   {{ x }}
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div>
+            Choose your Branding sevrice :
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3" *ngFor= "let x of branding">
+                <div class="switch_btn">
+                    <div class='toggle' id='switch' (click)="printlog(x)">
+                        <div class='glow-comp'></div>
+                        <div class='toggle-button'></div>
+                    </div>
+                    <div style="margin-left: 55px; font-weight: bold;">
+                      {{ x }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+
         </div>
     </div>
 
