@@ -12,6 +12,12 @@ export class QuestionaireComponent implements OnInit {
 
   branding = ['Logo Design', 'Full Brand', 'App Design'];
 
+  Question = ['What is the name of your business ?', 'What is your business sector?',
+   'What kind of products and / or services do you provide?',
+   'Who is your target market?'];
+
+  lst = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
   constructor() { }
 
   ngOnInit(): void {

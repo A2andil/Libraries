@@ -41,6 +41,24 @@
         </div>
 
         <div class="question">
+           <div *ngFor = "let i of Question" style="margin-top: 20px;">
+               <div style="margin-bottom: 5px;">{{i}}</div>
+               <input type="text" class="form-control">
+           </div>
+        </div>
+
+        <div class="container-fluid">
+            <div style="width: 68%; margin: 0 auto;">
+                <div class="row">
+                    <div class="col-lg-4" *ngFor = "let x of lst">
+                        <div style = "width: 275px; height: 234px; margin: 10px auto; background-color: #bbbdbf;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
 
         </div>
     </div>
