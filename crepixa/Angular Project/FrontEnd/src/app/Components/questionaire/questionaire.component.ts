@@ -21,6 +21,7 @@ export class QuestionaireComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(window.location.href)
     $('.toggle').click(function(e){
       e.preventDefault(); // The flicker is a codepen thing
       $(this).toggleClass('toggle-on');
@@ -30,6 +31,7 @@ export class QuestionaireComponent implements OnInit {
         $('#switch').addClass('black');
       }
    });
+
   }
 
   printlog(v) {
