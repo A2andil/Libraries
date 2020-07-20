@@ -15,23 +15,7 @@
     </div>
 
     <div class="col-7 bg-dark">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active circle"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="circle"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="circle"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3" class="circle"></li>
-
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100 img_item" [src]=img alt="First slide">
-          </div>
-          <div class="carousel-item" *ngFor = "let x of images" >
-            <img class="d-block w-100 img_item" [src]=x alt="Second slide">
-          </div>
-        </div>
-      </div>
+      <app-project-slider></app-project-slider>
     </div>
 
 </div>
@@ -54,6 +38,6 @@
     </div>
 </div>
 
-<div class="container-fluid" style="height: 100px;">
-
+<div class="container-fluid" style="min-height: 100px;">
+    <app-contact></app-contact>
 </div>

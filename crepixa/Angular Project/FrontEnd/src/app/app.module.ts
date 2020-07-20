@@ -21,6 +21,7 @@ import { NavBarTeamComponent } from './Components/nav-bar-team/nav-bar-team.comp
 import { QuestionaireComponent } from './Components/questionaire/questionaire.component';
 import { QuestionaireHeaderComponent } from './Components/questionaire-header/questionaire-header.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
+import { ProjectSliderComponent } from './Components/project-slider/project-slider.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ProjectsComponent } from './Components/projects/projects.component';
     QuestionaireComponent,
     QuestionaireHeaderComponent,
     ProjectsComponent,
+    ProjectSliderComponent,
   ],
   imports: [
     BrowserModule,
