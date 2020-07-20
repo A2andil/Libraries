@@ -20,6 +20,7 @@ import { TeamHeaderComponent } from './Components/team-header/team-header.compon
 import { NavBarTeamComponent } from './Components/nav-bar-team/nav-bar-team.component';
 import { QuestionaireComponent } from './Components/questionaire/questionaire.component';
 import { QuestionaireHeaderComponent } from './Components/questionaire-header/questionaire-header.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { QuestionaireHeaderComponent } from './Components/questionaire-header/qu
     NavBarTeamComponent,
     QuestionaireComponent,
     QuestionaireHeaderComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
