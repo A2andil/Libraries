@@ -7,10 +7,12 @@ import { P404Component } from './Components/p404/p404.component';
 import { TeamsComponent } from './Components/teams/teams.component';
 import { QuestionaireComponent } from './Components/questionaire/questionaire.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
+import { ProfileComponent } from './Components/profile/profile.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'profile', component: ProfileComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'questionaire', component: QuestionaireComponent},
