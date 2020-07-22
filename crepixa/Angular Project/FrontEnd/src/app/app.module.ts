@@ -23,6 +23,7 @@ import { QuestionaireHeaderComponent } from './Components/questionaire-header/qu
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { ProjectSliderComponent } from './Components/project-slider/project-slider.component';
 import { ProfileComponent } from './Components/profile/profile.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ProfileComponent } from './Components/profile/profile.component';
     ProjectsComponent,
     ProjectSliderComponent,
     ProfileComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
