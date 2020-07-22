@@ -1,9 +1,33 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+}
+.main_div {
+    height: 400px;
+    background-color: #fcdd15;
 }
 
-.sty {
-    height: 70px;
-    background-color: #fcdd15;
+.team {
+    width: 250px;
+    height: 300px;
+    margin:0 auto;
+    padding-top: 170px;
+    opacity: 98%;
+}
+
+.contain {
+    background-color: white;
+    min-height: 490px;
+}
+
+.txt {
+    font-size: 57px;
+    font-weight: bold;
+}
+
+.hrh {
+    height: 3px;
+    background-color: black;
+    width: 100px;
+    margin: 0 auto;
 }
