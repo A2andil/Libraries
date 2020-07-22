@@ -8,17 +8,19 @@ import { TeamsComponent } from './Components/teams/teams.component';
 import { QuestionaireComponent } from './Components/questionaire/questionaire.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { ProfileComponent } from './Components/profile/profile.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'AboutUs', component: AboutUsComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'questionaire', component: QuestionaireComponent},
   {path: 'login', component: LoginComponent},
   {path: 'team', component: TeamsComponent},
-  {path:'**', component: P404Component}
+  {path: '**', component: P404Component}
 ];
 
 @NgModule({

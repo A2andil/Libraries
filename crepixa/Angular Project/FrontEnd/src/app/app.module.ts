@@ -24,6 +24,7 @@ import { ProjectsComponent } from './Components/projects/projects.component';
 import { ProjectSliderComponent } from './Components/project-slider/project-slider.component';
 import { ProfileComponent } from './Components/profile/profile.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { AboutUsBodyComponent } from './Components/about-us-body/about-us-body.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
     ProjectSliderComponent,
     ProfileComponent,
     AboutUsComponent,
+    AboutUsBodyComponent,
   ],
   imports: [
     BrowserModule,
