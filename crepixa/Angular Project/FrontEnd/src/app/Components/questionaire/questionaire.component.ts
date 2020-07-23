@@ -31,13 +31,24 @@ export class QuestionaireComponent implements OnInit {
     console.log(this.selection);
     for (let i = 0; i < this.selection.length; i++) {
       if (this.selection[i] == val) {
-        obj.target.classList.remove('toggle-on');
+        if ('toggle-button' == obj.target.className) {
+          obj.target.parentElement.classList.remove('toggle-on');
+        }
+        else {
+          obj.target.classList.remove('toggle-on');
+        }
         this.selection.splice(i, 1);
         return;
       }
     }
-    obj.target.classList.add('toggle-on');
-    if (!this.selection.includes(val)) this.selection.push(val);
-    console.log(this.selection);
+    if (!this.selection.includes(val)) {
+      if ('toggle-button' == obj.target.className) {
+        obj.target.parentElement.classList.add('toggle-on');
+      }
+      else {
+        obj.target.classList.add('toggle-on');
+      }
+      this.selection.push(val);
+    } 
   }
 }
