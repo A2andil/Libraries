@@ -24,7 +24,6 @@ export class QuestionaireComponent implements OnInit {
 
   ngOnInit(): void {
     //console.log(window.location.href)
-
   }
 
   change_state(obj, val) {

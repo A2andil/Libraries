@@ -48,26 +48,29 @@
         </div>
 
         <div class="container-fluid">
-            <div style="width: 68%; margin: 0 auto;">
+            <div class="txt_img">
                 Which of the following styles do you prefer?
-                <div class="row">
-                    <div class="col-lg-4" *ngFor = "let x of lst">
-                        <div style = "width: 275px; height: 234px; margin: 10px auto; background-color: #bbbdbf;">
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" *ngFor = "let x of lst">
+                    <div class="img_box">
+                        <span class="text_test">
+                            Image
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid">
-            <div style="width: 68%; margin: 0 auto;">
+            <div class="deser">
                 Which of the following styles do you prefer?
-                <div class="row">
-                    <div class="col-lg-4" *ngFor = "let x of lst">
-                        <div style = "width: 275px; height: 234px; margin: 10px auto; background-color: #bbbdbf;">
-                            <div style="width: 100px;margin: 0px auto; padding-top: 100px;">
-                                font preview
-                            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" *ngFor = "let x of lst">
+                    <div class="font_pre">
+                        <div style="width: 100px;margin: 0px auto; padding-top: 100px;">
+                            FONT PREVIEW
                         </div>
                     </div>
                 </div>
