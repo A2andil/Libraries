@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-4" *ngFor = "let x of lst">
                     <div class="font_pre">
-                        <div style="width: 100px;margin: 0px auto; padding-top: 100px;">
+                        <div class="font_text">
                             FONT PREVIEW
                         </div>
                     </div>
@@ -78,43 +78,39 @@
         </div>
 
         <div class="container-fluid">
-            <div style="width: 68%; margin: 0 auto;">
+            <div class="deser">
                 Which of the following styles do you prefer?
-                <div style = "width: 100%;">
-                    <textarea class="form-control" style="min-height: 450px; margin-bottom: 40px;" ></textarea>
+            </div>
+            <div style = "width: 100%;">
+                <textarea class="form-control" style="min-height: 450px; margin-bottom: 40px;" ></textarea>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <span class="attach">
+                You can attach any files that you want us to look at when working on your request ( samples ,
+                mood borads , logos , documents , content and any thing will help us get your request done )
+            </span>
+            <div class="button-wrapper">
+                <span class="label">
+                    <i class="fa fa-upload" aria-hidden="true" ></i>
+                    Upload Image
+                </span>
+                
+                    <input type="file" name="upload" id="upload" class="upload-box" multiple placeholder="Upload File">
+                
                 </div>
-            </div>
         </div>
 
         <div class="container-fluid">
-            <div style="width: 68%; margin: 0 auto;">
-                <span>
-                    You can attach any files that you want us to look at when working on your request ( samples ,
-                    mood borads , logos , documents , content and any thing will help us get your request done )
-                </span>
-                <div class="button-wrapper">
-                    <span class="label">
-                        <i class="fa fa-upload" aria-hidden="true" ></i>
-                        Upload Image
-                    </span>
-                    
-                      <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
-                    
-                  </div>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div style="width: 68%; margin: 0 auto;">
-                <span>
-                    Thank you for taking the time to complete this questionnaire.
-                </span>
-                <div class="BuildBrand">
-                    <div class="BrandText">
-                        Submit REQUEST
-                    </div>
-                    <div class="BrandTriangle">
-                    </div>
+            <span class="thank">
+                Thank you for taking the time to complete this questionnaire.
+            </span>
+            <div class="BuildBrand">
+                <div class="BrandText">
+                    SUBMIT REQUEST
+                </div>
+                <div class="BrandTriangle">
                 </div>
             </div>
         </div>

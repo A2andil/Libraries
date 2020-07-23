@@ -15,6 +15,7 @@ html{
 body{
     height: 100%;
     background-color: #141219;
+    font-family: 'base-regular';
 }
 
 .wdth {
@@ -46,6 +47,20 @@ body{
     height: 234px;
     margin: 10px auto;
     background-color: #bbbdbf;
+}
+
+.font_text {
+    width: 100px;
+    margin: 0px auto;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.attach {
+    font-size: large;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto; 
 }
 
 .toggle{
@@ -125,15 +140,6 @@ body{
     line-height: 234px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
-
-body{
-  font-family: 'Open Sans', sans-serif;
-  height:100%;
-  text-align:center;
-  position:relative;
-}
-
 .button-wrapper {
   position: relative;
   width: 150px;
@@ -172,24 +178,33 @@ body{
     background-color: black;
     color: white;
     text-align: center;
-    width: 200px;
-    height: 50px;
+    width: 400px;
+    height: 80px;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 30px;
     cursor: pointer;
     border-radius: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .BrandText {
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .BrandTriangle {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 70px 20px 0;
+    border-width: 0 130px 30px 0;
     border-color: transparent #fcdd15 transparent transparent;
+}
+
+.thank {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    opacity: 95%;
 }
