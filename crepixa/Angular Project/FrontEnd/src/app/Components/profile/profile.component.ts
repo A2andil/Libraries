@@ -14,7 +14,9 @@ export class ProfileComponent implements OnInit {
     ['n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   ]
 
-  digits = [[0 ,1, 2, 3, 4, 5, 6, 7, 8, 9 , 10]];
+  digits = [
+    [0 ,1, 2, 3, 4, 5, 6, 7, 8, 9 , 10]
+  ];
   constructor() { }
 
   ngOnInit(): void {

@@ -17,6 +17,18 @@ body{
     background-color: #141219;
 }
 
+.wdth {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.deser {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 20px 0px; 
+}
+
 #switch{
     width: 45px;
     height: 25px;

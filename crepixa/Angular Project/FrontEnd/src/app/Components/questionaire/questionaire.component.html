@@ -3,14 +3,14 @@
 
 <div style="width: 100%; min-height: 500px; background-color: white;">
 
-    <div>
-        Choose Your Desired Service:
+    <div class="wdth">
+        <span class="deser">Choose your desired sevrice :</span>
     </div>
 
-    <div class="row">
+    <div class="row wdth">
         <div class="col-lg-3" *ngFor= "let x of xs">
             <div class="switch_btn">
-                <div class='toggle' id='switch' (click)="printlog(x)">
+                <div class='toggle' id='switch' (click)="change_state($event, x)">
                     <div class='glow-comp'></div>
                     <div class='toggle-button'></div>
                 </div>
@@ -21,15 +21,15 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div>
+    <div class="container-fluid wdth">
+        <div class="deser">
             Choose your Branding sevrice :
         </div>
 
         <div class="row">
             <div class="col-lg-3" *ngFor= "let x of branding">
                 <div class="switch_btn">
-                    <div class='toggle' id='switch' (click)="printlog(x)">
+                    <div class='toggle' id='switch'>
                         <div class='glow-comp'></div>
                         <div class='toggle-button'></div>
                     </div>
