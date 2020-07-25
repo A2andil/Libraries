@@ -8,7 +8,7 @@
     </div>
 
     <div class="row wdth">
-        <div class="col-lg-3" *ngFor= "let x of xs">
+        <div class="col-lg-3 col-md-4 col-sm-6" *ngFor= "let x of xs">
             <div class="switch_btn">
                 <div class='toggle' id='switch' (click)="change_state($event, x)">
                     <div class='glow-comp'></div>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3" *ngFor= "let x of branding">
+            <div class="col-lg-3 col-md-4 col-sm-6" *ngFor= "let x of branding">
                 <div class="switch_btn">
                     <div class='toggle' id='switch'>
                         <div class='glow-comp'></div>
@@ -52,8 +52,9 @@
                 Which of the following styles do you prefer?
             </div>
             <div class="row">
-                <div class="col-lg-4" *ngFor = "let x of lst">
+                <div class="col-lg-4 col-md-6" *ngFor = "let x of lst">
                     <div class="img_box">
+                        <input type="checkbox" id="{{x}}" style="cursor: pointer; width: 20px; height: 20px;">
                         <span class="text_test">
                             Image
                         </span>
@@ -69,6 +70,7 @@
             <div class="row">
                 <div class="col-lg-4" *ngFor = "let x of lst">
                     <div class="font_pre">
+                        <input type="checkbox" style="cursor: pointer; width: 20px; height: 20px;">
                         <div class="font_text">
                             FONT PREVIEW
                         </div>
@@ -118,7 +120,5 @@
     </div>
 
 </div>
-
-
 
 <app-contact></app-contact>

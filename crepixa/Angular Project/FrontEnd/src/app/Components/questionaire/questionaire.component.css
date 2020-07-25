@@ -25,7 +25,7 @@ body{
 }
 
 .wdth {
-    width: 1000px;
+    width: 950px;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -213,4 +213,36 @@ body{
     padding-top: 50px;
     font-weight: bold;
     opacity: 95%;
+}
+
+@media (max-width: 1000px) {
+    .wdth {
+        width: 767px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wdth {
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .wdth {
+        width: 570px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wdth {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }
