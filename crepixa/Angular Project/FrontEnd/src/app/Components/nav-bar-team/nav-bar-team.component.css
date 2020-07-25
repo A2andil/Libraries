@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 header {
@@ -45,7 +44,8 @@ header nav ul a {
     text-decoration: none;
     display: block;
     opacity: 90%;
-    font-family: monospace;
+    font-size: 20px;
+    font-family: 'base-regular';
 }
 
 header nav ul a:hover {
@@ -82,19 +82,17 @@ header nav ul a.active {
         position: absolute;
         width: 100%;
         height:calc(100vh - 70px);
-        background: #262626;
+        background: white;
         top: 70px;
         left: -100%;
         transition: 0.5s;
+        opacity: 90%;
     }
     header nav.active {
         left: 0;
     }
     header nav ul {
         display: block;
-    }
-    header nav ul a{
-        color: white;
     }
     header nav ul a:hover {
         color: white;

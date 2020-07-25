@@ -7,6 +7,12 @@ html{
     padding: 0;
 }
 
+.main_div {
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
+}
+
 .switch_btn {
     margin-left: 50px;
     margin-top: 10px;
