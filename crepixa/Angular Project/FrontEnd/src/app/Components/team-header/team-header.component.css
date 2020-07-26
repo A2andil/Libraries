@@ -49,13 +49,13 @@
         #fcdd15 30%,
         #fcdd15 60%,
         #f5f5f0 60%);
+    width: 100%;
+    
 }
 
 .div_col_div {
     height: 490px;
-    min-width: 300px;
-    max-width: 330px;
-    width: 65%;
+    width: 300px;
     margin: 0 auto;
     background-color: #f5f5f0;
     margin-top: 10px;
