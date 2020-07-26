@@ -10,16 +10,19 @@
 <div class="contain">
     <div class="row have">
 
-        <div class="col-lg-4 col-md-6 col-sm-12 col_div">
+        <div class="col-lg-4 col-md-6 col-sm-12 col_div" 
+        *ngFor = "let x of employees">
             <div class="div_col_div">
                 <div class="photo">
                 <!--<img src="" style="width: 100%; height: 100%;">-->
                 </div>
                 <div class="name">
-                    GHADA RAMADAN
+                    {{x.name}}
                 </div>
                 <div class="txt_center">
-                    Marketing Head
+                    <div *ngFor = "let y of x.job_title">
+                        {{y}}
+                    </div>
                     <hr class="line" />
                 </div>
 
@@ -46,16 +49,31 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-12 col_div">
+    </div>
+
+    <div class="row have" *ngIf = "false">
+        look
+    </div>
+</div>
+
+<div class="span_txt">CREPIXA Cairo</div>
+
+<div class="contain">
+    <div class="row have">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 col_div" 
+        *ngFor = "let x of trainee">
             <div class="div_col_div">
                 <div class="photo">
                 <!--<img src="" style="width: 100%; height: 100%;">-->
                 </div>
                 <div class="name">
-                    GHADA RAMADAN
+                    {{x.name}}
                 </div>
                 <div class="txt_center">
-                    Marketing Head
+                    <div *ngFor = "let y of x.job_title">
+                        {{y}}
+                    </div>
                     <hr class="line" />
                 </div>
 
@@ -82,42 +100,6 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-12 col_div">
-            <div class="div_col_div">
-                <div class="photo">
-                <!--<img src="" style="width: 100%; height: 100%;">-->
-                </div>
-                <div class="name">
-                    GHADA RAMADAN
-                </div>
-                <div class="txt_center">
-                    Marketing Head
-                    <hr class="line" />
-                </div>
-
-                <div class="social">
-                    <div class="row">
-                        <div class="col">
-                            <div class="icon">
-                                <img [src]=icon class="img_icon">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="icon">
-
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="icon">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        
     </div>
 </div>
 
