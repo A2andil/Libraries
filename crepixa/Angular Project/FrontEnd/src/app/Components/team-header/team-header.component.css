@@ -39,23 +39,16 @@
 
 .have{
    min-height: 490px;
-   background: linear-gradient(to top, 
-	                              transparent 0%, 
-	                              transparent calc(50% - 80px), 
-	                              #fcdd15 calc(50% - 80px), 
-	                              #fcdd15 calc(50% + 80px), 
-	                              transparent calc(50% + 80px), 
-                                  transparent 100%);
+ 
 }
 
 .col_div {
-    background: linear-gradient(
-        to top,
-        #f5f5f0,
-        #f5f5f0 11rem,
-        transparent 11rem,
-        transparent 100%
-      );
+    background: linear-gradient(180deg,
+        white 0%,
+        white 30%,
+        #fcdd15 30%,
+        #fcdd15 60%,
+        #f5f5f0 60%);
 }
 
 .div_col_div {

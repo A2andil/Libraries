@@ -151,6 +151,7 @@ body{
   width: 150px;
   text-align: center;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .button-wrapper span.label {
@@ -166,6 +167,7 @@ body{
   font-size:16px;
   color: black;
   border: solid 4px #fcdd15;
+  cursor: pointer;
 }
 
 #upload {
