@@ -42,6 +42,56 @@
     border: none;
 }
 
+.second_div {
+    background-color: orange;
+    min-height: 600px;
+}
+
+.s_left {
+    background-color: red;
+}
+
+.s_up_right {
+    height: 50%;
+    width: 100%;
+    background-color: rosybrown;
+}
+
+.s_down_right {
+    height: 50%;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.about {
+    min-height: 350px;
+     background-color: white;
+}
+
+.orange_div {
+    width: 120px;
+    height: 80px;
+    background-color: orange;
+    margin-top: 20px;
+}
+
+.title_sty {
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.title_under_sty {
+    font-size: large;
+}
+
+.text_div {
+    padding: 20px;
+    padding-right: 200px;
+    opacity: 90%;
+    line-height: 30px;
+}
+
 .build_brand {
     background-color: #fcdd15;
     margin-top: 0px;
