@@ -8,6 +8,40 @@
     background-color: #fcdd15;
 }
 
+.header_div {
+   height: 500px;
+   background-color: black;
+   opacity: 50%;
+}
+
+.header_box {
+    width: 400px;
+    height: 220px;
+    margin: 0px auto;
+    padding-top: 190px;
+}
+
+.title {
+   font-size: 2.5rem;
+   font-weight: bold;
+   text-align: center;
+   color: white;
+}
+
+.under_title {
+   font-size: 1.5rem;
+   text-align: center;
+   color: white;
+}
+
+.line {
+    width: 120px;
+    margin: 40px auto;
+    height: 5px;
+    background-color: #fcdd15;
+    border: none;
+}
+
 .build_brand {
     background-color: #fcdd15;
     margin-top: 0px;
