@@ -78,7 +78,6 @@
 .title_sty {
     font-size: x-large;
     font-weight: bold;
-    padding-top: 20px;
 }
 
 .title_under_sty {
@@ -86,11 +85,18 @@
 }
 
 .text_div {
-    padding: 20px;
-    padding-right: 200px;
     opacity: 90%;
     line-height: 30px;
     font-weight: bold;
+}
+
+.padding_top {
+    margin-top: 15px;
+}
+
+.padding_right {
+    padding-left: 20px;
+    padding-right: 100px;
 }
 
 .last_div {
@@ -109,6 +115,7 @@
     margin-top: 20px;
     width: 95%;
 }
+
 
 .l_part {
     background-color: blueviolet;
@@ -185,3 +192,90 @@
     width: 130px;
     margin-top: 3px;
 }
+
+.right_text {
+    width: 90%;
+     display: block;
+     float: right;
+}
+
+.left_text {
+    width: 10%;
+    display: block;
+    float: left;
+}
+
+@media (max-width: 796px) {
+    .padding_right {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .right_text {
+        width: 80%;
+         display: block;
+         float: right;
+    }
+    
+    .left_text {
+        width: 20%;
+        display: block;
+        float: left;
+    }
+
+    .text_div {
+        font-size: 12px;
+    }
+    .last_div {
+        height: 500px;
+    }
+    .f_part {
+        background-color: blanchedalmond;
+        height: 245px;
+        width: 95%;
+    }
+    
+    .s_part {
+        background-color: blue;
+        height: 245px;
+        margin-top: 10px;
+        width: 95%;
+    }
+    .last_last_div {
+        height: 550px;
+        margin-top: 15px;
+        background-color: springgreen;
+    }
+    
+}
+
+@media (max-width: 508px) {
+    .text_div {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .last_div {
+        height: 400px;
+    }
+    .f_part {
+        background-color: blanchedalmond;
+        height: 195px;
+        width: 95%;
+    }
+    
+    .s_part {
+        background-color: blue;
+        height: 195px;
+        margin-top: 10px;
+        width: 95%;
+    }
+
+    .last_last_div {
+        height: 500px;
+        margin-top: 10px;
+        background-color: springgreen;
+    }
+    
+}
+
+
