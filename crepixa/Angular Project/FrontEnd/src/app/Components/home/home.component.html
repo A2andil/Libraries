@@ -30,7 +30,7 @@
 <app-services></app-services>
 
 <!------------------Build Your App ------------------->
-<div class="row build_brand">
+<div class="row build_brand" style="position: relative;">
     <div class="col col_brand">
         <div class="BuildBrandBig">
             <div class="BrandTextBig">
@@ -46,16 +46,17 @@
             <hr class="line_style">
         </div>
     </div>
+    <div style="z-index: 10; position: absolute; right: 20px; bottom: 20px;">
+        <a (click) = "upd()" ><img [src]=upper style="width: 40px; height: 25px; cursor: pointer; opacity: 90%;"></a>
+    </div>
 </div>
-<!------------------Contact------------------->
+<!------------------ Contact ------------------->
 
 <app-contact></app-contact>
 
-<!-------------Last Contact------------------>
+<!------------- Last Contact ------------------>
 
 
 <app-nav-bar></app-nav-bar>
 
-<div style="z-index: 10; position: fixed; right: 20px; bottom: 20px;">
-    <a (click) = "upd()" ><img [src]=upper style="width: 40px; height: 25px; cursor: pointer;"></a>
-</div>
+

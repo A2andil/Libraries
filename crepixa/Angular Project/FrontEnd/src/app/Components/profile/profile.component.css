@@ -90,6 +90,45 @@
     padding-right: 200px;
     opacity: 90%;
     line-height: 30px;
+    font-weight: bold;
+}
+
+.last_div {
+    height: 600px;
+}
+
+.f_part {
+    background-color: blanchedalmond;
+    height: 290px;
+    width: 95%;
+}
+
+.s_part {
+    background-color: blue;
+    height: 290px;
+    margin-top: 20px;
+    width: 95%;
+}
+
+.l_part {
+    background-color: blueviolet;
+    height: 100%;
+}
+
+.last_last_div {
+    height: 700px;
+    margin-top: 20px;
+    background-color: springgreen;
+}
+
+.hght {
+    height: 500px;
+    background-color: orchid;
+}
+
+.lst_top {
+    background-color: pink;
+    height: 250px;
 }
 
 .build_brand {
