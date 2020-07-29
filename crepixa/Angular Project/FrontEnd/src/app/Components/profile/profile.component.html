@@ -2,7 +2,7 @@
 <div class="container-fluid sty">
 </div>
 
-<div class="container-fluid header_div">
+<div class="container-fluid header_div" style="background-image: url({{images[0]}});">
     <div class="header_box">
         <div class="title">
             Ghada Bin Sultan
@@ -15,15 +15,12 @@
 </div>
 
 <div class="row second_div">
-    <div class="col-8 s_left">
-        Loading...
+    <div class="col-8 s_left" style="background-image: url({{images[1]}});">
     </div>
     <div class="col-4">
-        <div class="s_up_right">
-            Loading...
+        <div class="s_up_right" style="background-image: url({{images[2]}});">
         </div>
-        <div class="s_down_right">
-            Loading...
+        <div class="s_down_right" style="background-image: url({{images[3]}});">
         </div>
     </div>
 </div>
@@ -50,96 +47,90 @@
                     autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
                     dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
                 </div>
-            </div>
-        </div>
+         </div>
+    </div>
 </div>
 
 <div class="container-fluid last_div">
     <div class="row">
         <div class="col-4">
-           <div class="f_part">
-               Loading Image ...
+           <div class="f_part" style="background-image: url({{images[4]}});">
            </div>
-           <div class="s_part">
-               Loading Image...
+           <div class="s_part" style="background-image: url({{images[5]}});">
            </div>
         </div>
         <div class="col-8">
-            <div class="l_part">
-                Loading Image ...
+            <div class="l_part" style="background-image: url({{images[6]}});">
             </div>
         </div>
     </div>
 
 </div>
 
-<div class="container-fluid last_last_div">
-    Image Loading ...
+<div class="container-fluid last_last_div" style="background-image: url({{images[7]}});">
 </div>
 
-<div class="container-fluid" style="min-height: 350px;">
-    <div class="row">
-        <div class="col-lg-3">
-            <div style="width: 100%; height: 80px;">
-                <div class="row">
-                    <div class="col" style="width: 200px; height: 80px; background-color: orange; margin-top: 20px;">
-                    </div>
-                    <div class="col" style="margin-top: 20px; margin-left: 20px; font-size: x-large; font-weight: bold;">
-                        Primary Font
-                    </div>
+<div class="container-fluid" style="min-height: 350px;" >
+    <div class="p_orange_part">
+        <div class="orange_part">
+
+        </div>
+        <div class="font_sty_ornage">
+            Primary Font
+        </div>
+    </div>
+    <div class="p_s_part">
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: large; margin-top: 20px;">
+            Jaguar JC
+        </div>
+        <div class="row">
+            <div class="col">
+                <table>
+                    <tr *ngFor = "let x of xs" >
+                        <td *ngFor = "let y of x"  style="width: 30px; font-size: medium; text-align: center;">
+                            {{y}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <div class="weight">
+                    Bold
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-9">
-            <div style="margin-left: 30px">
-                <div>
-                    Jaguar JC
+        <div class="row" style="margin-top: 30px;">
+            <div class="col">
+                <table>
+                    <tr *ngFor = "let x of xs" >
+                        <td *ngFor = "let y of x"  style="width: 30px; font-size: medium; text-align: center;">
+                            {{y}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <div class="weight">
+                    Light
                 </div>
-                    <div class="row">
-                        <div class="col">
-                            <table>
-                                <tr *ngFor = "let x of xs" >
-                                    <td *ngFor = "let y of x"  style="width: 30px; font-size: medium;">
-                                        {{y}}
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col">
-                            bold
-                        </div>
-                    </div>
+            </div>
+        </div>
 
-                    <div class="row" style="margin-top: 30px;">
-                        <div class="col">
-                            <table>
-                                <tr *ngFor = "let x of xs" >
-                                    <td *ngFor = "let y of x"  style="width: 30px; font-size: medium;">
-                                        {{y}}
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col">
-                            Light
-                        </div>
-                    </div>
-
-                    <div class="row" style="margin-top: 30px;">
-                        <div class="col">
-                            <table>
-                                <tr *ngFor = "let x of digits" >
-                                    <td *ngFor = "let y of x"  style="width: 36px; font-size: medium;">
-                                        {{y}}
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col">
-                            Figures
-                        </div>
-                    </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col">
+                <table>
+                    <tr *ngFor = "let x of digits" >
+                        <td *ngFor = "let y of x"  style="width: 36px; font-size: medium; text-align: center;">
+                            {{y}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <div class="weight">
+                    Figures
+                </div>
             </div>
         </div>
     </div>
@@ -147,17 +138,14 @@
 
 <div class="container-fluid">
     <div class="row hght">
-        <div class="col" style="background-color: black;">
-            <span style="color: white;">first</span>
+        <div class="col-8" style="background-image: url({{images[8]}});">
+            
         </div>
-        <div class="col" style="background-color: white;">
-            second
-        </div>
-        <div class="col">
-            <div class="lst_top">
+        <div class="col-4">
+            <div class="lst_top" style="background-image: url({{images[9]}})">
 
             </div>
-            <div class="lst_top" style="background-color: red;">
+            <div class="lst_top" style="background-image: url({{images[10]}})">
 
             </div>
         </div>

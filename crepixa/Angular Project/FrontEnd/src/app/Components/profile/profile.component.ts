@@ -17,6 +17,21 @@ export class ProfileComponent implements OnInit {
   digits = [
     [0 ,1, 2, 3, 4, 5, 6, 7, 8, 9 , 10]
   ];
+
+  images = [
+    'assets/Temp/header.png',
+    'assets/Temp/Ghada.png',
+    'assets/Temp/Ghada_top.png',
+    'assets/Temp/Ghada_left.png',
+    'assets/Temp/Ghada_second_top.png',
+    'assets/Temp/Ghada_second_down.png',
+    'assets/Temp/Ghada_second_left.png',
+    'assets/Temp/Ghada_third.png',
+    'assets/Temp/Ghada_fourth.png',
+    'assets/Temp/Ghada_fourth_top.png',
+    'assets/Temp/Ghada_fourth_down.png'
+    
+  ]
   constructor() { }
 
   ngOnInit(): void {
