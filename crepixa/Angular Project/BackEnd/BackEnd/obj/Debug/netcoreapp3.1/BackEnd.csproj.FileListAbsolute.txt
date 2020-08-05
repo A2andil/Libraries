@@ -89,5 +89,6 @@ D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\bin\Debug\netcoreapp
 D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.csproj.CoreCompileInputs.cache
 D:\Github\Libraries\crepixa\Angular Project\BackEnd\BackEnd\obj\Debug\netcoreapp3.1\BackEnd.MvcApplicationPartsAssemblyInfo.cache
